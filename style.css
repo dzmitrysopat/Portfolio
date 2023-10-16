@@ -5,3 +5,24 @@
     margin: 0;
     padding: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+    opacity: 1;
+    transition: all 2s;
+}
+
+body, header{
+    margin: 0 auto;
+    max-width: 100vw;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    overflow-x: hidden;
+    scroll-behavior:smooth;
+}
+
+
+h1{
+    font-size: 3.5rem;
+}
