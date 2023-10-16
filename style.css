@@ -19,7 +19,7 @@ body{
     min-height: 100vh;
     display: flex;
     flex-grow: 1;
-    gap: 100px;
+    gap: 150px;
     flex-direction: column;
     overflow-x: hidden;
     scroll-behavior:smooth;
@@ -60,7 +60,9 @@ h1{
 }
 
 i{
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: 100;
+    color: #fff;
 }
 
 #home{
@@ -73,10 +75,40 @@ i{
     flex-direction: column;
 }
 
+.line{
+    width: 100px;
+    height: 3px;
+    background-color: #383838;
+}
+
+.information{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+
 .description{
     color:#383838
 }
 
 .selfie{
     border-radius: 50%;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+a.button{
+    background-color: #383838;
+    border-radius: 10px;
+    color: #fff;
+    padding: 5px 15px;
+    width:fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
 }
