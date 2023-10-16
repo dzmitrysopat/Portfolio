@@ -9,17 +9,17 @@
     /* outline: 2px solid lightgreen; */
 }
 
-html {
+/* html {
     scroll-behavior: smooth;
-    opacity: 1;
-    transition: all 2s;
-}
+} */
 
 body{
     margin: 0 auto;
     max-width: 1400px;
+    min-height: 100vh;
     display: flex;
     flex-grow: 1;
+    gap: 100px;
     flex-direction: column;
     overflow-x: hidden;
     scroll-behavior:smooth;
@@ -35,19 +35,19 @@ header{
 #logo{
     text-decoration: none;
     font-size: 25px;
-    color: #000;
-    font-weight: 550;
+    /* color: #000; */
+    font-weight: 600;
 }
 
 nav{
     text-decoration: none;
     font-size: 20px;
     display: flex;
-    gap: 30px;
+    gap: 50px;
 }
 
 nav > a{
-    transition: all 1s;
+    transition: all .4s;
     font-weight: 500;
 }
 
@@ -56,5 +56,27 @@ nav > a:hover{
 }
 
 h1{
-    font-size: 3.5rem;
+    font-size: 3.2rem;
+}
+
+i{
+    font-size: 30px;
+}
+
+#home{
+    display: flex;
+    justify-content: space-between;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}
+
+.description{
+    color:#383838
+}
+
+.selfie{
+    border-radius: 50%;
 }
