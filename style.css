@@ -33,6 +33,12 @@ header{
     padding: 2% 0;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+}
+
 #logo{
     text-decoration: none;
     font-size: 25px;
@@ -40,11 +46,15 @@ header{
     font-weight: 600;
 }
 
+.black{
+    color: #383838;
+}
+
 nav{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     display: flex;
-    gap: 50px;
+    gap: 30px;
     align-items: center;
 }
 
@@ -54,23 +64,65 @@ nav > a{
 }
 
 nav > a:hover{
-    color: #000;
+    color: #f7941d;
 }
 
 h1{
     font-size: 3.2rem;
 }
 
-i{
-    font-size: 30px;
+h2{
+    font-size: 2.5rem;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #f7941d;
+}
+
+h4{
+    color: #8d8e8d;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+h5{
+    color: #8d8e8d;
     font-weight: 100;
+}
+
+i{
+    font-size: 28px;
+    font-weight: 100;
+    transition: all .5s;
+}
+
+i:hover{
+    color: #f7941d;
+}
+
+i.scroll{
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-container, .cards{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    width: fit-content;
 }
 
 #home{
     display: flex;
-    /* justify-content: space-between; */
     gap: 15%;
-    flex-wrap: wrap-reverse;
 }
 
 .links{
@@ -150,4 +202,18 @@ a.button{
     color: #fff;
     font-weight: 100;
     font-size: 26px;
+}
+
+.card{
+    background-color: #fff;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 125px;
+    /* height: 100px; */
+    gap: 5px;
 }
