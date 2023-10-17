@@ -9,9 +9,9 @@
     /* outline: 2px solid lightgreen; */
 }
 
-/* html {
+html {
     scroll-behavior: smooth;
-} */
+}
 
 body{
     margin: 0 auto;
@@ -23,6 +23,7 @@ body{
     flex-direction: column;
     overflow-x: hidden;
     scroll-behavior:smooth;
+    background-color: #fafafa;
 }
 
 header{
@@ -44,6 +45,7 @@ nav{
     font-size: 20px;
     display: flex;
     gap: 50px;
+    align-items: center;
 }
 
 nav > a{
@@ -60,55 +62,92 @@ h1{
 }
 
 i{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 100;
-    color: #fff;
 }
 
 #home{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 15%;
+    flex-wrap: wrap-reverse;
 }
 
 .links{
     display: flex;
     flex-direction: column;
+    margin-top: 80px;
+    gap: 10px;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+hr{
+    background-color: #808080;
+    height: 2px;
+    border: 0px;
+    border-radius: 50px;
 }
 
 .line{
-    width: 100px;
-    height: 3px;
-    background-color: #383838;
+    width: 80px;
+    height: 2px;
+    border-radius: 25px;
+    background-color: #808080;
 }
 
 .information{
     display: flex;
     flex-direction: column;
-    gap: 0px;
+    gap: 10px;
 }
 
 .description{
-    color:#383838
+    color:#8d8e8d;
 }
 
 .selfie{
     border-radius: 50%;
+    height: 350px;
+    align-self: flex-start;
 }
 
 .buttons{
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: 150px;
 }
 
 a.button{
     background-color: #383838;
-    border-radius: 10px;
+    border-radius: 18px;
     color: #fff;
-    padding: 5px 15px;
+    padding: 15px 40px;
     width:fit-content;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
+}
+
+#button{
+    background-color: inherit;
+    width: fit-content;    
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    display: flex;
+    border: none;
+    gap: 10px;
+}
+
+.button > i{
+    color: #fff;
+    font-weight: 100;
+    font-size: 26px;
 }
