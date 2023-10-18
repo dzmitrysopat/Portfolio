@@ -112,7 +112,7 @@ i.scroll{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 100px;
+    gap: 50px;
 }
 
 .cards{
@@ -156,18 +156,27 @@ i.scroll{
     gap: 20px;
 }
 
+#logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img{
+    width: 50px;
+    /* border-radius: 50%;  */
+}
+
 hr{
     background-color: #808080;
     height: 2px;
+    /* width: 500px; */
     border: 0px;
     border-radius: 50px;
 }
 
 .line{
-    width: 80px;
-    height: 2px;
-    border-radius: 25px;
-    background-color: #808080;
+    width: 260px;
 }
 
 .information{
@@ -225,6 +234,10 @@ a.button{
 }
 
 .block-name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
 }
 
@@ -253,15 +266,18 @@ a.button{
 }
 
 .skills-list{
-    display: flex;
-    gap: 50px;
+    display: grid;
+    grid-template-columns: 250px auto;
+    gap: 10px;
 }
 
 .skill-item{
     display: flex;
     gap: 10px;
     align-items: center;
+    padding: 15px;
 }
+
 
 .skill{
     text-align: left;
