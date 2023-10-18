@@ -334,11 +334,47 @@ ul > li{
     gap: 10px;
 }
 
+.msgs{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .contacts-container{
     display: flex;
+    gap: 50px;
+    justify-content: space-between;
 }
+
+.contact-card{
+    background-color: #fff;
+    border: 2px solid #dddddd;
+    border-radius: 10px;
+    padding: 15px 20px;}
 
 form{
     display: flex;
     flex-direction: column;
+    /* gap: 20px; */
 }
+
+textarea{
+    height: 100px;
+}
+
+label{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+input, textarea{
+    width: 300px;
+    /* height: 30px; */
+    padding: 15px; 
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 2px solid #8d8e8d;
+}
+
