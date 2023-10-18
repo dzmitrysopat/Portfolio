@@ -26,11 +26,23 @@ body{
     background-color: #fafafa;
 }
 
+::-webkit-scrollbar{
+	width: 10px;
+}
+
+::-webkit-scrollbar-track{
+	background-color: #f3fbf9 ;
+}
+
+::-webkit-scrollbar-thumb{
+	background: #808080;
+}
+
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2%;
+    padding: 2%;
 
 }
 
@@ -79,7 +91,7 @@ nav > a{
 }
 
 nav > a:hover{
-    color: #f7941d;
+    /* color: #f7941d; */
 }
 
 nav > a:after {
@@ -237,7 +249,7 @@ a.button{
 
 #button{
     background-color: inherit;
-    width: fit-content;    
+    width: fit-content;  
     justify-content: center;
     align-items: center;
     font-size: 20px;
@@ -286,7 +298,7 @@ a.button{
 
 .skills-list{
     display: grid;
-    grid-template-columns: 250px auto;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
 
