@@ -42,7 +42,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2%;
+    padding: 2% 0;
 
 }
 
@@ -332,4 +332,13 @@ ul > li{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.contacts-container{
+    display: flex;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
 }
