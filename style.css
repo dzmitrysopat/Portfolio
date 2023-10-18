@@ -30,7 +30,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2% 0;
+    padding-top: 2%;
 
 }
 
@@ -173,7 +173,7 @@ hr{
 }
 
 .line{
-    width: 260px;
+    width: 250px;
 }
 
 .information{
@@ -275,7 +275,25 @@ a.button{
     padding: 15px;
 }
 
-
 .skill{
     text-align: left;
+}
+
+.double{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    list-style-type: none;
+}
+
+ul > li{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
