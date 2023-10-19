@@ -6,7 +6,7 @@
     color: #383838;
     margin: 0;
     padding: 0;
-    /* outline: 2px solid lightgreen; */
+    outline: 2px solid lightgreen;
 }
 
 html {
@@ -355,14 +355,15 @@ ul > li{
 .contacts-container{
     display: flex;
     gap: 50px;
-    justify-content: space-between;
+    
+    justify-content: flex-start;
 }
 
 .contact-card{
     background-color: #fff;
     border: 2px solid #dddddd;
     border-radius: 10px;
-    padding: 15px 20px;
+    padding: 15px 30px;
 }
 
 .contact-link{
@@ -395,3 +396,27 @@ input, textarea{
     border: 2px solid #8d8e8d;
 }
 
+.qualify-tabs{
+    display: flex;
+    gap: 30px;
+}
+
+button.white-btn{
+    width: fit-content;
+    border-radius: 0;
+    font-size: 30px;
+    font-weight: 500;
+    color: #383838;
+    padding: 0;
+    background-color: inherit;
+    transition: all .3s;
+}
+
+button.white-btn:hover,
+button.white-btn:hover > i{
+    color: #f7941d;
+}
+
+button.white-btn > i{
+    font-size: 40px;
+}
