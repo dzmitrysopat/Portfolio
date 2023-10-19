@@ -180,10 +180,10 @@
                 <h4>My personal jorney</h4>
             </section>
             <section class="qualify-tabs">
-                <button class="white-btn"><i class="uil uil-graduation-cap"></i>Education</button>
-                <button class="white-btn"><i class="uil uil-bag-alt"></i>Work</button>
+                <button class="white-btn" onclick="hide()"><i class="uil uil-graduation-cap"></i>Education</button>
+                <button class="white-btn" onclick="show()"><i class="uil uil-bag-alt"></i>Work</button>
             </section>
-            <section class="education" id="education">
+            <section class="education show" id="education">
                 <div class="qualify-post div1">
                     <h4>Energy Engineer</h4>
                     <p class="description">GSTU, Gomel, Belarus</p>
@@ -234,9 +234,8 @@
                     <div class="dot"></div>
                 </div>
             </section>
-        </article>
 
-        <section class="work" id="work">
+        <section class="work hide" id="work">
             <div class="qualify-post div01">
                 <h4>Active Sales Specialist</h4>
                 <p class="description">A1(velcom), Belarus</p>
@@ -360,5 +359,7 @@
         </section>
         <h5 class="copyright">&copy; All rihgts reserved</h5>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>

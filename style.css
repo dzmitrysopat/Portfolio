@@ -410,6 +410,7 @@ button.white-btn{
     padding: 0;
     background-color: inherit;
     transition: all .3s;
+    cursor: pointer;
 }
 
 button.white-btn:hover,
@@ -474,4 +475,12 @@ div.v-line{
     width: 3px;
     height: 85px;
     background-color: #999999;
+}
+
+.hide{
+    display: none;
+}
+
+.show{
+    display: grid;
 }
