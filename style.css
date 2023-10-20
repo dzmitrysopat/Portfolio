@@ -499,27 +499,35 @@ button.active > i{
 .case {
     display: grid;
     grid-template-columns: (auto, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 15px;
-    grid-row-gap: 10px;
-    }
-    
-    .case-preview { grid-area: 1 / 1 / 4 / 2; }
-    .case-name { grid-area: 1 / 2 / 2 / 3; }
-    .case-description { grid-area: 2 / 2 / 3 / 3; }
-    .case-link { grid-area: 3 / 2 / 4 / 3; }
+    grid-template-rows: repeat(3, auto);
+    grid-column-gap: 50px;
+    grid-row-gap: 0px;
+    align-items: center;
+}
+
+.case-preview { grid-area: 1 / 1 / 4 / 2; }
+.case-name { grid-area: 1 / 2 / 2 / 3; }
+.case-description { grid-area: 2 / 2 / 3 / 3; }
+.case-link { grid-area: 3 / 2 / 4 / 3; }
 
 .case-preview{
     width: 520px;
-    /* height: 13px; */
     border-radius: 25px;
 }
 
 .case-name{
-    padding-top: 25px;
-    font-size: 25px;
+    padding: 0;
+    align-self: flex-end;
+    font-size: 30px;
 }
 
 .case-description{
-    font-size: 22px;
+    font-size: 20px;
+}
+
+a.case-link{
+    width: 250px;
+    height: 20px;
+    border-radius: 10px;
+    align-self: flex-start;
 }
