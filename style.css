@@ -501,7 +501,7 @@ button.active > i{
     grid-template-columns: (auto, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 15px;
-    grid-row-gap: 0px;
+    grid-row-gap: 10px;
     }
     
     .case-preview { grid-area: 1 / 1 / 4 / 2; }
@@ -510,7 +510,16 @@ button.active > i{
     .case-link { grid-area: 3 / 2 / 4 / 3; }
 
 .case-preview{
-    width: 320px;
-    height: 213px;
+    width: 520px;
+    /* height: 13px; */
+    border-radius: 25px;
+}
 
+.case-name{
+    padding-top: 25px;
+    font-size: 25px;
+}
+
+.case-description{
+    font-size: 22px;
 }
