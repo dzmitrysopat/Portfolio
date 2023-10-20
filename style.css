@@ -440,7 +440,7 @@ button.white-btn > i{
 .education,
 .work{
     display: grid;
-    grid-template-columns: auto 30px auto;
+    grid-template-columns: 250px 30px auto;
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 0px;
@@ -483,4 +483,10 @@ div.v-line{
 
 .show{
     display: grid;
+    color: #f7941d;
+}
+
+button.white-btn:focus,
+button.white-btn:focus > i{
+    color: #f7941d;
 }

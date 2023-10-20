@@ -3,6 +3,7 @@ function show(){
     document.getElementById("education").classList.add("hide");
     document.getElementById("work").classList.add("show");
     document.getElementById("work").classList.remove("hide");
+    
 }
 
 function hide(){
