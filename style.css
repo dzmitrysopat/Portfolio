@@ -495,3 +495,22 @@ button.active,
 button.active > i{
     color: #f7941d;
 }
+
+.case {
+    display: grid;
+    grid-template-columns: (auto, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+    }
+    
+    .case-preview { grid-area: 1 / 1 / 4 / 2; }
+    .case-name { grid-area: 1 / 2 / 2 / 3; }
+    .case-description { grid-area: 2 / 2 / 3 / 3; }
+    .case-link { grid-area: 3 / 2 / 4 / 3; }
+
+.case-preview{
+    width: 320px;
+    height: 213px;
+
+}
