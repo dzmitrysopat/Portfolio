@@ -490,3 +490,8 @@ button.white-btn:focus,
 button.white-btn:focus > i{
     color: #f7941d;
 }
+
+button.active,
+button.active > i{
+    color: #f7941d;
+}
