@@ -43,7 +43,6 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 2% 0;
-
 }
 
 main{
@@ -84,14 +83,14 @@ nav{
 }
 
 nav > a{
-    transition: all .4s;
+    transition: all .2s;
     font-weight: 500;
     position: relative;
 	cursor: pointer;
 }
 
 nav > a:hover{
-    /* color: #f7941d; */
+    color: #f7941d;
 }
 
 nav > a:after {
@@ -102,7 +101,7 @@ nav > a:after {
 	height: 3px; /*задаём ширину линии*/
 	background-color: #f7941d; /*задаём цвет линии*/
 	content: "";
-	transition: width 0.3s ease-out; /*задаём время анимации*/
+	transition: width 0.2s ease-out; /*задаём время анимации*/
 }
 
 nav > a:hover:after,
@@ -575,4 +574,10 @@ div.swiper-button-prev{
 
 .swiper-wrapper{
     padding-bottom: 50px;
+}
+
+section.contact-form > h3,
+section.msgs > h3{
+    align-self: flex-start;
+    /* border-bottom: 2px solid #999999; */
 }
