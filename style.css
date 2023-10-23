@@ -362,7 +362,7 @@ ul > li{
     background-color: #fff;
     border: 2px solid #dddddd;
     border-radius: 10px;
-    padding: 15px 30px;
+    padding: 10px 100px 10px 10px;
 }
 
 .contact-link{
@@ -387,12 +387,12 @@ label{
 }
 
 input, textarea{
-    width: 300px;
+    width: 500px;
     /* height: 30px; */
     padding: 15px; 
     margin-bottom: 20px;
     border-radius: 8px;
-    border: 2px solid #8d8e8d;
+    border: 2px solid #dddddd;
 }
 
 .qualify-tabs{
@@ -579,5 +579,5 @@ div.swiper-button-prev{
 section.contact-form > h3,
 section.msgs > h3{
     align-self: flex-start;
-    /* border-bottom: 2px solid #999999; */
+    border-bottom: 2px solid #dddddd;
 }
