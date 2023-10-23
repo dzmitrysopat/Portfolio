@@ -354,7 +354,6 @@ ul > li{
 .contacts-container{
     display: flex;
     gap: 50px;
-
     justify-content: flex-start;
 }
 
@@ -362,7 +361,7 @@ ul > li{
     background-color: #fff;
     border: 2px solid #dddddd;
     border-radius: 10px;
-    padding: 10px 100px 10px 10px;
+    padding: 10px 50px 10px 10px;
 }
 
 .contact-link{
