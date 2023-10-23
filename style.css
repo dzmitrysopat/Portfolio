@@ -31,7 +31,7 @@ body{
 }
 
 ::-webkit-scrollbar-track{
-	background-color: #f3fbf9 ;
+	background-color: inherit ;
 }
 
 ::-webkit-scrollbar-thumb{
@@ -500,7 +500,7 @@ button.active > i{
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);
-    grid-column-gap: 50px;
+    grid-column-gap: 25px;
     grid-row-gap: 0px;
     align-items: center;
 }
@@ -536,13 +536,18 @@ a.case-link{
 .swiper-button-next::after,
 .swiper-button-prev::after{
     color: #383838;
-    font-weight: 700;
+    font-weight: 900;
+    transition: all .3s;
+}
+
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover::after{
+    color: #f7941d;
 }
 
 .swiper{
     position: relative;
     width: 1100px;
-    /* overflow: auto; */
 }
 
 span.swiper-pagination-bullet{
@@ -564,7 +569,7 @@ span.swiper-pagination-bullet-active{
 
 div.swiper-button-next,
 div.swiper-button-prev{
-    top: 55%;
+    top: 50%;
     margin: 0;
 }
 
