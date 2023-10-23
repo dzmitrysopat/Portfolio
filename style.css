@@ -533,21 +533,27 @@ a.case-link{
 }
 
 /* slider */
-.swiper-button-next,
-.swiper-button-prev{
+.swiper-button-next::after,
+.swiper-button-prev::after{
     color: #383838;
-    background-color: #f7941d;
-    padding: 15px 20px;
-    font-size: 5px;
-    border-radius: 50%;
-    transition: all .5s;
-}
+    font-size: 10px;
+    font-weight: 700;
 
-.swiper-button-next:hover,
-.swiper-button-prev:hover{
-    scale: 1.1;
 }
 
 .swiper{
-    width: 1200px;
+    position: relative;
+    width: 1400px;
 }
+
+span.swiper-pagination-bullet{
+    background-color: #383838;
+    color: #383838;
+    height: 12px;
+    width: 12px;
+}
+
+span.swiper-pagination-bullet-active{
+    background-color: #f7941d;
+}
+
