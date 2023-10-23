@@ -8,8 +8,8 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://itchief.ru/examples/libs/ui-components/itc-slider/itc-slider.css">
-    <script src="https://itchief.ru/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
@@ -296,42 +296,57 @@
                 <h2>Portfolio</h2>
                 <h4>My cases</h4>
             </section>
-            <section class="portfolio-cases itc-slider" data-autoplay="true" data-interval="7000" data-loop="true" data-slider="itc-slider">
-                <div  class="case itc-slider__item">
-                    <img src="./img/jasvami.png" alt="" class="case-preview">
-                    <h3 class="black case-name">Jasvami.com</h3>
-                    <p class="description case-description">
-                        Business card of a highly qualified psychologist from Gomel.
-                        <br>
-                        Website adaptable to all devices, with ui components and animated interactions.
-                    </p>
-                    <a href="https://dzmitrysopat.github.io/jasvami.com" class="button case-link" target="_blank">Live Demo<i class="uil uil-github-alt"></i></a>
+            <section class="swiper portfolio-cases">
+                <div class="swiper-wrapper">
+                <div  class="swiper-slide">
+                    <div class="case">
+                        <img src="./img/jasvami.png" alt="" class="case-preview">
+                        <h3 class="black case-name">Jasvami.com</h3>
+                        <p class="description case-description">
+                            Business card of a highly qualified psychologist from Gomel.
+                            <br>
+                            Website adaptable to all devices, with ui components and animated interactions.
+                        </p>
+                        <a href="https://dzmitrysopat.github.io/jasvami.com" class="button case-link" target="_blank">Live Demo<i class="uil uil-github-alt"></i></a>
+                    </div>
+                    
                 </div>
 
-                <div class="case itc-slider__item">
-                    <img src="./img/web.folio.png" alt="" class="case-preview">
-                    <h3 class="black case-name">web.folio</h3>
-                    <p class="description case-description">
-                        Final project for It-Academy journey.
-                        <br>
-                        Website adaptable to all devices, with ui components and animated interactions.
-                    </p>
-                    <a href="https://dzmitrysopat.github.io/web.folio" class="button case-link" target="_blank">Live Demo<i class="uil uil-github-alt"></i></a>
+                <div class="swiper-slide">
+                    <div class="case">
+                        <img src="./img/web.folio.png" alt="" class="case-preview">
+                        <h3 class="black case-name">web.folio</h3>
+                        <p class="description case-description">
+                            Final project for It-Academy journey.
+                            <br>
+                            Website adaptable to all devices, with ui components and animated interactions.
+                        </p>
+                        <a href="https://dzmitrysopat.github.io/web.folio" class="button case-link" target="_blank">Live Demo<i class="uil uil-github-alt"></i></a>
+                    </div>
+                    
                 </div>
 
-                <div class="case itc-slider__item">
-                    <img src="./img/travel.png" alt="" class="case-preview">
-                    <h3 class="black case-name">Travel</h3>
-                    <p class="description case-description">
-                        Final project for It-Academy journey.
-                        <br>
-                        Website adaptable to all devices, with ui components and animated interactions.
-                    </p>
-                    <a href="https://dzmitrysopat.github.io/travel" class="button case-link" target="_blank">Live Demo<i class="uil uil-github-alt"></i></a>
+                <div class="swiper-slide">
+                    <div class="case">
+                        <img src="./img/travel.png" alt="" class="case-preview">
+                        <h3 class="black case-name">Travel</h3>
+                        <p class="description case-description">
+                            Final project for It-Academy journey.
+                            <br>
+                            Website adaptable to all devices, with ui components and animated interactions.
+                        </p>
+                        <a href="https://dzmitrysopat.github.io/travel" class="button case-link" target="_blank">Live Demo<i class="uil uil-github-alt"></i></a>
+                    </div>
+                </div>
+                
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
                 </div>
             </section>
-            <button class="itc-slider__btn itc-slider__btn_prev"><</button>
-    <button class="itc-slider__btn itc-slider__btn_next"><</button>
         </article>
 
         <!-- contacts -->

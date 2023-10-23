@@ -1,3 +1,20 @@
+var swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+});
+
 function show(){
     document.getElementById("educationBtn").classList.remove("active");
     document.getElementById("workBtn").classList.add("active");    
