@@ -605,14 +605,26 @@ section.msgs > h3{
 }
 
 footer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 2% 0;
-    padding-left: 13.5%;
-    width: 100%;
-    margin: 0 auto;
-    z-index: 15;
-    background-color: #fafafa;
-    left: 0;
+}
+
+#totop, .totop{
+    display: none;
+    position: fixed;
+    width: fit-content;
+    padding: 5px 10px;
+    right: 3%;
+    bottom: 5%;
+    cursor: pointer;
+    z-index: 99;
+    opacity: 0.7;
+    transition: all .3s;
+}
+
+.totop:hover{
+    opacity: 1;
+}
+
+.totop > i{
+    color: #fff;
 }
