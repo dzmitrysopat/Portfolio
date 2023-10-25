@@ -1,21 +1,3 @@
-let articles = document.getElementsByClassName("anchor");
-console.log(articles);
-let navLinks = document.querySelectorAll('header nav a');
-window.onscroll = () => {
-    articles.forEach(art => {
-        let top = window.scrollY;
-        let offset = art.offsetTop - 150;
-        let height = art.offsetHeight;
-        let id = art.getAttribute('class');
-        if(top >= offset && top < offset + height) {
-            navLinks.forEach(links => {
-                links.classList.remove('active-link');
-                document.querySelector('header nav a[href*=' + id + ']').classList.add('active-link');
-            });
-        };
-    });
-};
-
 var swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -62,6 +44,7 @@ function hide(){
     document.getElementById("work").classList.add("hide"); 
 }
 
+
 let calcScrollValue = () => {
   let scrollProgress = document.getElementById("progress");
   let progressValue = document.getElementById("progress-value");
@@ -82,6 +65,3 @@ let calcScrollValue = () => {
 };
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
-
-
-
