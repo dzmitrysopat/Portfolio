@@ -13,22 +13,22 @@
 </head>
 <body>
     <header>
-        <div class="header-container">
             <a href="index.html" class="logo" id="logo"><img src="./img/logo.png" class="logo-img" alt="">Dzmitry</a>
-            <nav>
-                <a href="#" class="nav-item">Home</a>
-                <a href="#about-anchor" class="nav-item">About</a>
-                <a href="#skills-anchor" class="nav-item">Skills</a>
-                <a href="#qualification-anchor" class="nav-item">Services</a>
-                <a href="#portfolio-anchor" class="nav-item">Portfolio</a>
-                <a href="#contact-anchor" class="nav-item">Contact</a>
+            <nav id="nav" class="navigation">
+                <a href="#home" class="nav-item active-link">Home</a>
+                <a href="#about" class="nav-item">About</a>
+                <a href="#double" class="nav-item">Skills</a>
+                <a href="#qualification" class="nav-item">Qualification</a>
+                <a href="#portfolio" class="nav-item">Portfolio</a>
+                <a href="#contact" class="nav-item">Contact</a>
                 <i class="uil uil-moon theme"></i>
             </nav>
-        </div>
+
     </header>
 
     <main>
-        <article id="home">
+        <div class="home anchor"></div>
+        <article id="homeContainer">
             <section class="links">
                 <a href="https://by.linkedin.com/in/dzmitry-sopat-796473251" class="link"><i class="uil uil-linkedin-alt"></i></a>
                 <a href="https://github.com/dzmitrysopat" target="_blank" alt="github"><i class="uil uil-github-alt"></i></a>
@@ -40,17 +40,16 @@
                 <hr>
                 <p class="description">Hi! I'm begginer and passionate Front-End Developer <br> based in Belarus. 📍</p>
                 <section class="buttons">
-                    <a href="#contact-anchor" class="button">Contact Me<i class="uil uil-message"></i></i></a>
-                    <a href="#about-anchor" class="white-btn" id="button"><i class="uil uil-mouse-alt scroll"></i> Scroll down <i class="uil uil-arrow-down"></i></a>
+                    <a href="#contact" class="button">Contact Me<i class="uil uil-message"></i></i></a>
+                    <a href="#about" class="white-btn" id="button"><i class="uil uil-mouse-alt scroll"></i> Scroll down <i class="uil uil-arrow-down"></i></a>
                 </section>
             </section>
             <img src="./img/photo.jpg" class="selfie" alt="my photo">
-            
         </article>
 
         <!-- about -->
-        <div id="about-anchor"></div>
-        <article id="about" class="container">
+        <div class="about anchor"></div>
+        <article id="aboutContainer" class="container">
             <section class="block-name">
                 <h2>About Me</h2>
                 <h4>My introdution</h4>
@@ -79,12 +78,12 @@
                     <a href="" class="button" download>Download CV<i class="uil uil-file-alt"></i></a>
                 </div>
             </section>
-            <div id="skills-anchor"></div>
+            <article id=""></article>
         </article>
 
         <!-- skills & services-->
-        
-        <article class="double">
+        <div class="double anchor"></div>
+        <article class="double" id="doubleContainer">
             <article id="skills" class="container">
                 <section class="block-name">
                     <h2>Skills</h2>
@@ -147,8 +146,8 @@
                             </div>
                         </div>
                     </section>  
-                    <div id="qualification-anchor"></div> 
-            </article>
+                    <article id=""></article>
+                </article>
 
             <article id="services" class="container">
                 <section class="block-name">
@@ -181,7 +180,8 @@
 
         
         <!-- qualification -->
-        <article id="qualification" class="container">
+        <div class="qualification anchor"></div>
+        <article id="qualificationContainer" class="container">
             <section class="block-name">
                 <h2>Qualification</h2>
                 <h4>My personal jorney</h4>
@@ -240,10 +240,8 @@
                     <div class="line"></div>
                     <div class="dot"></div>
                 </div>
-                <div id="work-anchor"></div>
+                <article id=""></article>
             </section>
-
-            
 
         <section class="work hide" id="work">
             <div class="qualify-post div01">
@@ -295,13 +293,13 @@
                 <div class="dot"></div>
             </div>
         </section>
-        <div id="portfolio-anchor"></div>
+        <article id=""></article>
     </article>
 
         <!-- portfolio -->
         
-
-        <article id="portfolio" class="container">
+        <div class="portfolio anchor"></div>
+        <article id="portfolioContainer" class="container">
             <section class="block-name">
                 <h2>Portfolio</h2>
                 <h4>My cases</h4>
@@ -357,9 +355,9 @@
         </article>
 
         <!-- contacts -->
-        <div id="contact-anchor"></div>
+        <div class="contact anchor"></div>
 
-        <article id="contact" class="container">
+        <article id="contactContainer" class="container">
             <section class="block-name">
                 <h2>Contact Me</h2>
                 <h4>Get in touch</h4>

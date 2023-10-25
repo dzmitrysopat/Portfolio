@@ -42,7 +42,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1% 0;
+    padding: 2% 0;
     /* padding-left: 13.5%; */
     /* position: fixed; */
     position: sticky;
@@ -65,8 +65,7 @@ header{
 main{
     display: flex;
     flex-direction: column;
-    gap: 150px;
-    margin-top: 5%;
+    gap: 100px;
 }
 
 #logo{
@@ -107,11 +106,13 @@ nav > a{
 	cursor: pointer;
 }
 
-nav > a:hover{
+nav > a:hover,
+nav > a.colored{
     color: #f7941d;
 }
 
-nav > a:after {
+nav > a:after,
+nav > a:active:after {
 	display: block;
 	position: absolute;
 	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
@@ -125,6 +126,10 @@ nav > a:after {
 nav > a:hover:after,
 nav > a:focus:after {
 	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.active-link{
+    color: #f7941d;
 }
 
 h1{
@@ -193,7 +198,7 @@ i.scroll{
     align-items: flex-start;
 }
 
-#home, .home{
+#homeContainer, .home{
     display: flex;
     gap: 15%;
 }
@@ -638,5 +643,5 @@ footer{
 }
 
 span > i.uil-arrow-up{
-    font-size: 45px;
+    font-size: 40px;
 }
