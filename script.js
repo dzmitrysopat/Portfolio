@@ -1,3 +1,25 @@
+let articles = document.querySelectorAll("article[id]");
+window.addEventListener("scroll", navHighlighter);
+function navHighlighter() {
+  let scrollY = window.scrollY;
+  articles.forEach(current => {
+    let articleHeight = current.offsetHeight;
+    
+    let articleTop = current.offsetTop - 50;
+    
+    articleId = current.getAttribute("id");
+    console.log(articleId);
+    if (
+      scrollY > articleTop &&
+      scrollY <= articleTop + articleHeight
+    ){
+      document.querySelector("header nav a[href*=" + articleId + "]").classList.add("active-link");
+    } else {
+      document.querySelector(".navigation a[href*=" + articleId + "]").classList.remove("active-link");
+    }
+  });
+}
+
 var swiper = new Swiper('.swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -43,7 +65,6 @@ function hide(){
     document.getElementById("work").classList.remove("show");
     document.getElementById("work").classList.add("hide"); 
 }
-
 
 let calcScrollValue = () => {
   let scrollProgress = document.getElementById("progress");

@@ -15,20 +15,19 @@
     <header>
             <a href="index.html" class="logo" id="logo"><img src="./img/logo.png" class="logo-img" alt="">Dzmitry</a>
             <nav id="nav" class="navigation">
-                <a href="#home" class="nav-item active-link">Home</a>
-                <a href="#about" class="nav-item">About</a>
-                <a href="#double" class="nav-item">Skills</a>
-                <a href="#qualification" class="nav-item">Qualification</a>
-                <a href="#portfolio" class="nav-item">Portfolio</a>
-                <a href="#contact" class="nav-item">Contact</a>
+                <a href="#home-anchor" class="nav-item active-link">Home</a>
+                <a href="#about-anchor" class="nav-item">About</a>
+                <a href="#double-anchor" class="nav-item">Skills</a>
+                <a href="#qualify-anchor" class="nav-item">Qualification</a>
+                <a href="#portfolio-anchor" class="nav-item">Portfolio</a>
+                <a href="#contact-anchor" class="nav-item">Contact</a>
                 <i class="uil uil-moon theme"></i>
             </nav>
-
     </header>
 
     <main>
-        <div class="home anchor" id="home"></div>
-        <article id="homeContainer">
+        <div id="home-anchor" class="anchor"></div>
+        <article id="home">
             <section class="links">
                 <a href="https://by.linkedin.com/in/dzmitry-sopat-796473251" class="link"><i class="uil uil-linkedin-alt"></i></a>
                 <a href="https://github.com/dzmitrysopat" target="_blank" alt="github"><i class="uil uil-github-alt"></i></a>
@@ -40,16 +39,17 @@
                 <hr>
                 <p class="description">Hi! I'm begginer and passionate Front-End Developer <br> based in Belarus. 📍</p>
                 <section class="buttons">
-                    <a href="#contact" class="button">Contact Me<i class="uil uil-message"></i></i></a>
-                    <a href="#about" class="white-btn" id="button"><i class="uil uil-mouse-alt scroll"></i> Scroll down <i class="uil uil-arrow-down"></i></a>
+                    <a href="#contact-anchor" class="button">Contact Me<i class="uil uil-message"></i></i></a>
+                    <a href="#about-anchor" class="white-btn" id="button"><i class="uil uil-mouse-alt scroll"></i> Scroll down <i class="uil uil-arrow-down"></i></a>
                 </section>
             </section>
             <img src="./img/photo.jpg" class="selfie" alt="my photo">
+            
         </article>
 
         <!-- about -->
-        <div class="about anchor" id="about"></div>
-        <article id="aboutContainer" class="container">
+        <div class="anchor" id="about-anchor"></div>
+        <article id="about" class="container">
             <section class="block-name">
                 <h2>About Me</h2>
                 <h4>My introdution</h4>
@@ -78,12 +78,12 @@
                     <a href="" class="button" download>Download CV<i class="uil uil-file-alt"></i></a>
                 </div>
             </section>
-            <article id=""></article>
+            
         </article>
 
         <!-- skills & services-->
-        <div class="double anchor" id="double"></div>
-        <article class="double" id="doubleContainer">
+        <div class="anchor" id="double-anchor"></div>
+        <article id="double" class="double">
             <article id="skills" class="container">
                 <section class="block-name">
                     <h2>Skills</h2>
@@ -176,130 +176,128 @@
                         </ul>
                     </section>
             </article>
+            <div id="qualify-anchor" class="anchor"></div>
         </article>
 
-        
-        <!-- qualification -->
-        <div class="qualification anchor" id="qualification"></div>
-        <article id="qualificationContainer" class="container">
-            <section class="block-name">
-                <h2>Qualification</h2>
-                <h4>My personal jorney</h4>
-            </section>
-            <section class="qualify-tabs">
-                <button class="white-btn active" id="educationBtn" onclick="hide()" type="button"><i class="uil uil-graduation-cap"></i>Education</button>
-                <button class="white-btn" id="workBtn" onclick="show()" type="button"><i class="uil uil-bag-alt"></i>Work</button>
-            </section>
-            <section class="education show" id="education">
-                <div class="qualify-post div1">
-                    <h4>Energy Engineer</h4>
-                    <p class="description">GSTU, Gomel, Belarus</p>
-                    <div class="time">
-                        <i class="uil uil-calendar-alt"></i>
-                        2013-2018
-                    </div>
-                </div>
-                <div class="div5">
-                    
-                    <div class="dot"></div>
-                    <div class="v-line"></div>
-                </div>
-                <div class="qualify-post div2">
-                    <h4>Software Engineer</h4>
-                    <p class="description">GSTU, Gomel, Belarus</p>
-                    <div class="time">
-                        <i class="uil uil-calendar-alt"></i>
-                        2016-2018
-                    </div>
-                </div>
-                <div class="div6">
-                    <div class="dot"></div>
-                    <div class="v-line"></div>
-                </div>
-                <div class="qualify-post div3">
-                    <h4>Master of Energy Engineering</h4>
-                    <p class="description">GSTU, Gomel, Belarus</p>
-                    <div class="time">
-                        <i class="uil uil-calendar-alt"></i>
-                        2018-2019
-                    </div>
-                </div>
-                <div class="div7">
-                    <div class="dot"></div>
-                    <div class="v-line"></div>
-                </div>
-                <div class="qualify-post div4">
-                    <h4>Front-End Web Developer</h4>
-                    <p class="description">It-Academy, Gomel, Belarus</p>
-                    <div class="time">
-                        <i class="uil uil-calendar-alt"></i>
-                        2022
-                    </div>
-                </div>
-                <div class="div8">
-                    <div class="line"></div>
-                    <div class="dot"></div>
-                </div>
-                <article id=""></article>
-            </section>
-
+         <!-- qualification -->
+         
+         <article id="qualify" class="container">
+             <section class="block-name">
+                 <h2>Qualification</h2>
+                 <h4>My personal jorney</h4>
+             </section>
+             <section class="qualify-tabs">
+                 <button class="white-btn active" id="educationBtn" onclick="hide()" type="button"><i class="uil uil-graduation-cap"></i>Education</button>
+                 <button class="white-btn" id="workBtn" onclick="show()" type="button"><i class="uil uil-bag-alt"></i>Work</button>
+             </section>
+             <section class="education show" id="education">
+                 <div class="qualify-post div1">
+                     <h4>Energy Engineer</h4>
+                     <p class="description">GSTU, Gomel, Belarus</p>
+                     <div class="time">
+                         <i class="uil uil-calendar-alt"></i>
+                         2013-2018
+                     </div>
+                 </div>
+                 <div class="div5">
+                     <div class="dot"></div>
+                     <div class="v-line"></div>
+                 </div>
+                 <div class="qualify-post div2">
+                     <h4>Software Engineer</h4>
+                     <p class="description">GSTU, Gomel, Belarus</p>
+                     <div class="time">
+                         <i class="uil uil-calendar-alt"></i>
+                         2016-2018
+                     </div>
+                 </div>
+                 <div class="div6">
+                     <div class="dot"></div>
+                     <div class="v-line"></div>
+                 </div>
+                 <div class="qualify-post div3">
+                     <h4>Master of Energy Engineering</h4>
+                     <p class="description">GSTU, Gomel, Belarus</p>
+                     <div class="time">
+                         <i class="uil uil-calendar-alt"></i>
+                         2018-2019
+                     </div>
+                 </div>
+                 <div class="div7">
+                     <div class="dot"></div>
+                     <div class="v-line"></div>
+                 </div>
+                 <div class="qualify-post div4">
+                     <h4>Front-End Web Developer</h4>
+                     <p class="description">It-Academy, Gomel, Belarus</p>
+                     <div class="time">
+                         <i class="uil uil-calendar-alt"></i>
+                         2022
+                     </div>
+                 </div>
+                 <div class="div8">
+                     <div class="line"></div>
+                     <div class="dot"></div>
+                 </div>
+                 <article id=""></article>
+             </section>
+ 
         <section class="work hide" id="work">
-            <div class="qualify-post div01">
-                <h4>Active Sales Specialist</h4>
-                <p class="description">A1(velcom), Belarus</p>
-                <div class="time">
-                    <i class="uil uil-calendar-alt"></i>
-                    2016-2019
-                </div>
-            </div>
-            <div class="div05">
-                <div class="dot"></div>
-                <div class="v-line"></div>
-            </div>
-            <div class="qualify-post div02">
-                <h4>Electronic Engineer</h4>
-                <p class="description">GSTU, Gomel, Belarus</p>
-                <div class="time">
-                    <i class="uil uil-calendar-alt"></i>
-                    2019
-                </div>
-            </div>
-            <div class="div06">
-                <div class="dot"></div>
-                <div class="v-line"></div>
-            </div>
-            <div class="qualify-post div03">
-                <h4>Software Engineer<br>(System Administrator)</h4>
-                <p class="description">RUE "Gomelenergo"</p>
-                <div class="time">
-                    <i class="uil uil-calendar-alt"></i>
-                    2020-2023
-                </div>
-            </div>
-            <div class="div07">
-                <div class="dot"></div>
-                <div class="v-line"></div>
-            </div>
-            <div class="qualify-post div04">
-                <h4>Software Engineer</h4>
-                <p class="description">RUE "Gomelenergo"</p>
-                <div class="time">
-                    <i class="uil uil-calendar-alt"></i>
-                    2023 - 
-                </div>
-            </div>
-            <div class="div08">
-                <div class="line"></div>
-                <div class="dot"></div>
-            </div>
-        </section>
-        <article id=""></article>
-    </article>
-
-        <!-- portfolio -->
+             <div class="qualify-post div01">
+                 <h4>Active Sales Specialist</h4>
+                 <p class="description">A1(velcom), Belarus</p>
+                 <div class="time">
+                     <i class="uil uil-calendar-alt"></i>
+                     2016-2019
+                 </div>
+             </div>
+             <div class="div05">
+                 <div class="dot"></div>
+                 <div class="v-line"></div>
+             </div>
+             <div class="qualify-post div02">
+                 <h4>Electronic Engineer</h4>
+                 <p class="description">GSTU, Gomel, Belarus</p>
+                 <div class="time">
+                     <i class="uil uil-calendar-alt"></i>
+                     2019
+                 </div>
+             </div>
+             <div class="div06">
+                 <div class="dot"></div>
+                 <div class="v-line"></div>
+             </div>
+             <div class="qualify-post div03">
+                 <h4>Software Engineer<br>(System Administrator)</h4>
+                 <p class="description">RUE "Gomelenergo"</p>
+                 <div class="time">
+                     <i class="uil uil-calendar-alt"></i>
+                     2020-2023
+                 </div>
+             </div>
+             <div class="div07">
+                 <div class="dot"></div>
+                 <div class="v-line"></div>
+             </div>
+             <div class="qualify-post div04">
+                 <h4>Software Engineer</h4>
+                 <p class="description">RUE "Gomelenergo"</p>
+                 <div class="time">
+                     <i class="uil uil-calendar-alt"></i>
+                     2023 - 
+                 </div>
+             </div>
+             <div class="div08">
+                 <div class="line"></div>
+                 <div class="dot"></div>
+             </div>
+         </section>
+         <article id=""></article>
+     </article>
         
-        <div class="portfolio anchor" id="portfolio"></div>
-        <article id="portfolioContainer" class="container">
+        <!-- portfolio -->
+        <div class="anchor" id="portfolio-anchor"></div>
+        <article id="portfolio" class="container">
             <section class="block-name">
                 <h2>Portfolio</h2>
                 <h4>My cases</h4>
@@ -350,14 +348,12 @@
                 <div class="swiper-pagination"></div>
             </section>
             <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-                
+            <div class="swiper-button-next"></div>
         </article>
 
         <!-- contacts -->
-        <div class="contact anchor" id="contact"></div>
-
-        <article id="contactContainer" class="container">
+        <div class="anchor" id="contact-anchor"></div>
+        <article id="contact" class="container">
             <section class="block-name">
                 <h2>Contact Me</h2>
                 <h4>Get in touch</h4>
@@ -427,6 +423,5 @@
 
     <script src="./script.js"></script>
     <script src="./theme.js"></script>
-    <script src="totop.js"></script>
 </body>
 </html>
