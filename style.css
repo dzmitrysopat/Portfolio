@@ -112,7 +112,7 @@ nav > a.colored{
 }
 
 nav > a:after,
-nav > a:active:after {
+nav > a:active:after{
 	display: block;
 	position: absolute;
 	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
@@ -124,7 +124,8 @@ nav > a:active:after {
 }
 
 nav > a:hover:after,
-nav > a:focus:after {
+nav > a:focus:after,
+nav > a.active-link:after {
 	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 

@@ -13,9 +13,9 @@ function navHighlighter() {
       scrollY > articleTop &&
       scrollY <= articleTop + articleHeight
     ){
-      document.querySelector("header nav a[href*=" + articleId + "]").classList.add("active-link");
+      document.querySelector("header nav a[href*=" + articleId + "-anchor" + "]").classList.add("active-link");
     } else {
-      document.querySelector(".navigation a[href*=" + articleId + "]").classList.remove("active-link");
+      document.querySelector(".navigation a[href*=" + articleId + "-anchor" + "]").classList.remove("active-link");
     }
   });
 }
