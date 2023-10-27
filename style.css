@@ -6,7 +6,7 @@
     color: #383838;
     margin: 0;
     padding: 0;
-    /* outline: 2px solid lightgreen; */
+    outline: 2px solid lightgreen;
 }
 
 html {
@@ -19,7 +19,7 @@ body{
     min-height: 100vh;
     display: flex;
     flex-grow: 1;
-    gap: 150px;
+    gap: 80px;
     flex-direction: column;
     overflow-x: hidden;
     scroll-behavior:smooth;
@@ -64,6 +64,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 150px;
+    /* margin: 50px 0px 100px 0; */
 }
 
 #logo{
@@ -119,6 +120,11 @@ nav > a:active:after{
 	background-color: #f7941d; /*задаём цвет линии*/
 	content: "";
 	transition: width 0.2s ease-out; /*задаём время анимации*/
+}
+
+.dark body{
+    color: #fff;
+    background-color: #383838;
 }
 
 nav > a:hover:after,
@@ -201,6 +207,7 @@ i.scroll{
 #home, .home{
     display: flex;
     gap: 15%;
+    /* margin-top: 150px; */
 }
 
 .home{

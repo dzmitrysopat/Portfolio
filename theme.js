@@ -13,13 +13,13 @@ document.querySelector('.theme').addEventListener('click', (event) => {
     try {
       if (localStorage.getItem('theme') === 'dark') {
         document.querySelector('html').classList.add('dark');
-        document.querySelector('.theme i').classList.add("uil-sun");
-        document.querySelector('.theme i').classList.remove("uil-moon");
+        document.querySelector('header nav i').classList.add("uil-sun");
+        document.querySelector('header nav i').classList.remove("uil-moon");
       }
       else {
         document.querySelector('html').classList.remove('dark');
-        document.querySelector('.theme i').classList.add("uil-moon");
-        document.querySelector('.theme i').classList.remove("uil-sun");
+        document.querySelector('header nav i').classList.add("uil-moon");
+        document.querySelector('header nav i').classList.remove("uil-sun");
       }
     } catch (err) { }
   }

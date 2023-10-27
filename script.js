@@ -4,11 +4,9 @@ function navHighlighter() {
   let scrollY = window.scrollY;
   articles.forEach(current => {
     let articleHeight = current.offsetHeight;
-    
-    let articleTop = current.offsetTop - 400;
-    
+    console.log(articleHeight)
+    let articleTop = current.offsetTop - 350;    
     articleId = current.getAttribute("id");
-    console.log(articleId);
     if (
       scrollY > articleTop &&
       scrollY <= articleTop + articleHeight
@@ -81,6 +79,7 @@ let calcScrollValue = () => {
   }
   scrollProgress.addEventListener("click", () => {
     document.documentElement.scrollTop = 0;
+    document.querySelector("header nav a[href*=" + "home-anchor" + "]").classList.add("active-link");
   });
   scrollProgress.style.background = `conic-gradient(#383838 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
 };
