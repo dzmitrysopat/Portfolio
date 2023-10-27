@@ -5,7 +5,7 @@ function navHighlighter() {
   articles.forEach(current => {
     let articleHeight = current.offsetHeight;
     
-    let articleTop = current.offsetTop - 50;
+    let articleTop = current.offsetTop - 400;
     
     articleId = current.getAttribute("id");
     console.log(articleId);
