@@ -15,6 +15,7 @@ document.querySelector('.theme').addEventListener('click', (event) => {
         document.querySelector('html').classList.add('dark');
         document.querySelector('header nav i').classList.add("uil-sun");
         document.querySelector('header nav i').classList.remove("uil-moon");
+        document.getElementsByClassName("alt-image").src="&theme=light";
       }
       else {
         document.querySelector('html').classList.remove('dark');

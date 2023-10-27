@@ -6,7 +6,7 @@
     color: #383838;
     margin: 0;
     padding: 0;
-    outline: 2px solid lightgreen;
+    /* outline: 2px solid lightgreen; */
 }
 
 html {
@@ -654,14 +654,18 @@ span > i.uil-arrow-up{
 
 .dark h1,
 .dark h2,
-.dark h3,
+.dark .black,
 .dark h4,
 .dark .description,
 .dark a,
 .dark i,
 .dark li,
 .dark button,
-.dark label{
+.dark label,
+.dark input,
+.dark textarea,
+.dark .swiper-button-next::after,
+.dark .swiper-button-prev::after{
     color: #dddddd;
 }
 
@@ -674,8 +678,20 @@ span > i.uil-arrow-up{
     background-color: inherit;
 }
 
+.dark div.dot,
 .dark .button,
-.dark .button > i{
+.dark .button > i,
+.dark span.swiper-pagination-bullet{
     background-color: #dddddd;
+    color: #383838;
+}
+
+.dark button.active,
+.dark i:hover,
+.dark .uil-arrow-up:hover{
+    color: #f7941d;
+}
+
+.dark i.uil-arrow-up{
     color: #383838;
 }
