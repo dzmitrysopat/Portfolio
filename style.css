@@ -122,11 +122,6 @@ nav > a:active:after{
 	transition: width 0.2s ease-out; /*задаём время анимации*/
 }
 
-.dark body{
-    color: #fff;
-    background-color: #383838;
-}
-
 nav > a:hover:after,
 nav > a:focus:after,
 nav > a.active-link:after {
@@ -650,4 +645,37 @@ footer{
 
 span > i.uil-arrow-up{
     font-size: 40px;
+}
+
+.dark body{
+    color: #fff;
+    background-color: #383838;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark .description,
+.dark a,
+.dark i,
+.dark li,
+.dark button,
+.dark label{
+    color: #dddddd;
+}
+
+.dark header,
+.dark .card,
+.dark .big-card,
+.dark input,
+.dark textarea,
+.dark .contact-card{
+    background-color: inherit;
+}
+
+.dark .button,
+.dark .button > i{
+    background-color: #dddddd;
+    color: #383838;
 }
