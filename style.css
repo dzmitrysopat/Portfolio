@@ -686,6 +686,11 @@ span > i.uil-arrow-up{
     color: #383838;
 }
 
+.dark span.swiper-pagination-bullet-active{
+    background-color: #f7941d;
+    opacity: 1;
+}
+
 .dark button.active,
 .dark i:hover,
 .dark .uil-arrow-up:hover{
