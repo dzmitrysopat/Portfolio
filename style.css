@@ -75,7 +75,7 @@ main{
     display: flex;
     align-items: center;
     gap: 10px;
-    transition: all .3s;
+    transition: all .4s;
 }
 
 #logo:hover{
@@ -99,7 +99,7 @@ nav{
 }
 
 nav > a{
-    transition: all .2s;
+    transition: all .4s;
     font-weight: 500;
     position: relative;
 	cursor: pointer;
@@ -160,7 +160,7 @@ h5{
 i{
     font-size: 28px;
     font-weight: 100;
-    transition: all .5s;
+    transition: all .4s;
 }
 
 i:hover{
@@ -269,6 +269,24 @@ a.button{
     align-items: center;
     justify-content: center;
     gap: 15px;
+    transition: all .4s;
+    border: 2px solid #383838;
+}
+
+a.button:hover,
+button.button:hover{
+    border: 2px solid #383838;
+    color: #383838;
+    background-color: inherit;
+}
+
+a.button:hover > i,
+button[type=submit]:hover > i{
+    color: #383838;
+}
+
+button[type=submit]{
+    border: 2px solid #383838;
 }
 
 #button{
@@ -280,6 +298,12 @@ a.button{
     display: flex;
     border: none;
     gap: 10px;
+    transition: all .4s;
+}
+
+#button:hover,
+#button:hover > i{
+    color: #f7941d;
 }
 
 button{
@@ -292,6 +316,7 @@ button{
     align-items: center;
     justify-content: center;
     gap: 15px;
+    transition: all .4s;
 }
 
 .button > i{
@@ -438,7 +463,7 @@ button.white-btn{
     color: #383838;
     padding: 0;
     background-color: inherit;
-    transition: all .3s;
+    transition: all .4s;
     cursor: pointer;
 }
 
@@ -566,7 +591,7 @@ a.case-link{
 .swiper-button-prev::after{
     color: #383838;
     font-weight: 900;
-    transition: all .3s;
+    transition: all .4s;
 }
 
 .swiper-button-prev:hover::after,
@@ -693,10 +718,25 @@ span > i.uil-arrow-up{
 
 .dark button.active,
 .dark i:hover,
-.dark .uil-arrow-up:hover{
+.dark .uil-arrow-up:hover,
+.dark .swiper-button-prev:hover::after,
+.dark .swiper-button-next:hover::after{
     color: #f7941d;
 }
 
 .dark i.uil-arrow-up{
     color: #383838;
+}
+
+.dark a.button:hover,
+.dark button.button:hover{
+    border: 2px solid #dddddd;
+    color: #dddddd;
+    background-color: inherit;
+}
+
+.dark a.button:hover > i,
+.dark button[type=submit]:hover > i{
+    color: #dddddd;
+    background-color: inherit;
 }
