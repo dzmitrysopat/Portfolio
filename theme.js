@@ -10,21 +10,22 @@ document.querySelector('.theme').addEventListener('click', (event) => {
     addDarkClassToHTML()
   });
 
-
-
   function addDarkClassToHTML() {
     const image = document.getElementById("logoImg");
     const figma = document.getElementById("figma");
     const git = document.getElementById("git");
+    const link = document.getElementById("favicon");
+    console.log(link.href);
 
     try {
       if (localStorage.getItem('theme') === 'dark') {
         document.querySelector('html').classList.add('dark');
         document.querySelector('header nav i').classList.add("uil-sun");
         document.querySelector('header nav i').classList.remove("uil-moon");
-        image.src = './img/logo-light.png';
         figma.src = 'https://skillicons.dev/icons?i=figma&theme=light';
-        git.src = 'https://skillicons.dev/icons?i=github&theme=light'
+        git.src = 'https://skillicons.dev/icons?i=github&theme=light';
+        image.src = './img/logo-light.png';
+        link.href = './img/logo-light.png';
       }
       else {
         document.querySelector('html').classList.remove('dark');
@@ -32,6 +33,7 @@ document.querySelector('.theme').addEventListener('click', (event) => {
         document.querySelector('header nav i').classList.remove("uil-sun");
         figma.src = 'https://skillicons.dev/icons?i=figma';
         git.src = 'https://skillicons.dev/icons?i=github'
+        link.href = './img/logo.png';
         image.src = 'img/logo.png';
       }
     } catch (err) { }
