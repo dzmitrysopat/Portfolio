@@ -548,7 +548,8 @@ button.white-btn:focus > i{
 }
 
 button.active,
-button.active > i{
+button.active > i,
+p.active{
     color: #f7941d;
 }
 
@@ -641,6 +642,30 @@ section.msgs > h3{
 
 footer{
     padding: 2% 0;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+.languages{
+    color: #999999;
+    display: flex;
+    gap: 5px;
+    /* text-transform: uppercase; */
+    font-size: 18px;
+}
+
+.lang{
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.lang.active{
+    color: #383838;
+}
+
+.lang:hover{
+    color: #f7941d;
 }
 
 #progress {
@@ -691,6 +716,7 @@ span > i.uil-arrow-up{
 .dark label,
 .dark input,
 .dark textarea,
+.dark .lang,
 .dark .swiper-button-next::after,
 .dark .swiper-button-prev::after{
     color: #dddddd;
@@ -719,6 +745,7 @@ span > i.uil-arrow-up{
 }
 
 .dark button.active,
+.dark .lang.active,
 .dark i:hover,
 .dark .uil-arrow-up:hover,
 .dark .swiper-button-prev:hover::after,
