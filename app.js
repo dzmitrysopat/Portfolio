@@ -1,16 +1,17 @@
 const select = document.getElementsByClassName("lang");
-const allLang = ['en', 'ru', 'ua'];
+console.log(select);
+const allLang = ['en', 'ru'];
 
-select.addEventListener('change', changeURLLanguage);
+
+select.addEventListener('click', changeURLLanguage);
 
 // перенаправить на url с указанием языка
 function changeURLLanguage() {
-    let lang = select.value;
-    console.log(lang);
+    let lang = select.id;
     location.href = window.location.pathname + '#' + lang;
-    window.location.reload();
+    location.reload();
 }
-
+console.log(lang);
 function changeLanguage() {
     let hash = window.location.hash;
     hash = hash.substr(1);
