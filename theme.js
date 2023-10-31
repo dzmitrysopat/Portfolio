@@ -15,8 +15,6 @@ document.querySelector('.theme').addEventListener('click', (event) => {
     const figma = document.getElementById("figma");
     const git = document.getElementById("git");
     const favicon = document.getElementById("favicon");
-    console.log(favicon.href);
-
     try {
       if (localStorage.getItem('theme') === 'dark') {
         document.querySelector('html').classList.add('dark');

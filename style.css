@@ -742,6 +742,7 @@ span > i.uil-arrow-up{
     color: #383838;
 }
 
+.dark #progress,
 .dark span.swiper-pagination-bullet-active{
     background-color: #f7941d;
     opacity: 1;

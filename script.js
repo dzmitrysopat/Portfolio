@@ -80,11 +80,11 @@ let calcScrollValue = () => {
     document.documentElement.scrollTop = 0;
     document.querySelector("header nav a[href*=" + "home-anchor" + "]").classList.add("active-link");
   });
-  if (localStorage.getItem('theme') === 'dark') {
-  scrollProgress.style.background = `conic-gradient(#f7941d ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+  if (localStorage.getItem('theme') != 'dark') {
+  scrollProgress.style.background = `conic-gradient(#383838 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
   }
   else{
-    scrollProgress.style.background = `conic-gradient(#383838 ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+    scrollProgress.style.background = `conic-gradient(#F7941D ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
   }
 };
 window.onscroll = calcScrollValue;
