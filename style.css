@@ -657,6 +657,9 @@ footer{
 
 .lang{
     cursor: pointer;
+    background: none;
+    padding: 0;
+    font-size: 18px;
     transition: all .4s;
 }
 
@@ -716,7 +719,7 @@ span > i.uil-arrow-up{
 .dark label,
 .dark input,
 .dark textarea,
-.dark .lang,
+.dark button.lang,
 .dark .swiper-button-next::after,
 .dark .swiper-button-prev::after{
     color: #dddddd;
@@ -745,6 +748,7 @@ span > i.uil-arrow-up{
 }
 
 .dark button.active,
+.dark button.lang:hover,
 .dark .lang.active,
 .dark i:hover,
 .dark .uil-arrow-up:hover,
