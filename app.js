@@ -6,8 +6,9 @@ select.addEventListener('change', changeURLLanguage);
 // перенаправить на url с указанием языка
 function changeURLLanguage() {
     let lang = select.value;
+    console.log(lang);
     location.href = window.location.pathname + '#' + lang;
-    location.reload();
+    window.location.reload();
 }
 
 function changeLanguage() {
