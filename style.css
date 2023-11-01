@@ -655,19 +655,21 @@ footer{
     font-size: 18px;
 }
 
-.lang{
+button.lang{
     cursor: pointer;
     background: none;
     padding: 0;
     font-size: 18px;
     transition: all .4s;
+    border: none;
+    width: auto;
 }
 
-.lang.active{
+button.lang.active{
     color: #383838;
 }
 
-.lang:hover{
+button.lang:hover{
     color: #f7941d;
 }
 
@@ -750,7 +752,7 @@ span > i.uil-arrow-up{
 
 .dark button.active,
 .dark button.lang:hover,
-.dark .lang.active,
+.dark button.lang.active,
 .dark i:hover,
 .dark .uil-arrow-up:hover,
 .dark .swiper-button-prev:hover::after,
