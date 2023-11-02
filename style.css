@@ -64,6 +64,7 @@ header{
 
 main{
     display: flex;
+    flex: 1;
     flex-direction: column;
     gap: 150px;
     /* margin: 50px 0px 100px 0; */
