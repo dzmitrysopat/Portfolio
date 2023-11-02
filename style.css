@@ -647,7 +647,7 @@ footer{
     align-items: center;
 }
 
-.languages{
+select.languages{
     color: #999999;
     display: flex;
     gap: 5px;
