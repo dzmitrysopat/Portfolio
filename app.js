@@ -2,8 +2,6 @@
 const select = document.querySelector('select');
 const allLang = ['en', 'ru'];
 
-
-
 select.addEventListener('change', changeURLLanguage);
 
 // перенаправить на url с указанием языка
