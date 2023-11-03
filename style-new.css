@@ -44,6 +44,11 @@ i:hover{
     color: #f7941d;
 }
 
+i.scroll{
+    font-size: 50px;
+    font-weight: 100;
+}
+
 h1{
     font-size: 3.2rem;
 }
@@ -165,11 +170,13 @@ main{
     gap: 15%;
     flex-direction: row;   
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 section.links{
-    display: flex;
     flex-direction: column;
+    margin-top: 50px;
+    display: flex;
     gap: 10px;
 }
 
@@ -189,15 +196,36 @@ section.information{
 }
 
 div.btns{
+    gap: 150px;
     display: flex;
-    flex-direction: column;
-    gap: 100px;
+    margin-top: 50px;
+    flex-direction: column;   
 }
 
 a.btn{
-    border: 2px solid #383838;
-    border-radius: 15px;
+    padding: 10px 40px;
+    width: fit-content;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: #fafafa;
     background-color: #383838;
-    text-align: center;
+    border-radius: 15px;
+    border: 2px solid #383838;    
+    
 }
+
+a.btn > i{
+    color: #fafafa;
+}
+
+a.white-btn{
+    font-size: 20px;
+    width: fit-content;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
