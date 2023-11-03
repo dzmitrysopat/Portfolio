@@ -24,7 +24,6 @@ body{
     gap: 80px;
     flex-direction: column;
     overflow-x: hidden;
-    scroll-behavior:smooth;
     background-color: #fafafa;
 }
 
