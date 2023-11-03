@@ -12,7 +12,7 @@
     }
 
     .swiper{
-        width: 550px;
+        max-width: 550px;
     }
 
     div.case{
@@ -36,5 +36,91 @@
     a.case-link{
         width: 450px;
     }
+}
 
+@media screen and (max-width: 970px){
+    nav{
+        display: none;
+    }
+
+    #home{
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+
+    .links{
+        /* flex-direction: row; */
+        /* align-self: flex-start; */
+        justify-self: flex-start;
+    }
+
+    #button{
+        display: none;
+    }
+
+    .contacts-container{
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .msgs{
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .msgs > h3{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 565px){
+    main{
+        gap: 50px;
+        margin: 0 50px;
+    }
+
+    #home{
+        justify-content: flex-start;
+    }
+    .links{
+        flex-direction: row;
+        margin-top: 20px;
+        justify-self: flex-start;
+    }
+
+    div.case{
+        width: fit-content;
+    }
+
+    .case-preview{
+        max-width: 70%;
+    }
+
+    .case-name{
+        align-self: flex-start;
+        margin-left: 30px;
+    }
+
+    .swiper{
+        width: fit-content;
+    }
+
+    .case-description{
+        text-align: justify;
+        max-width: 50%;
+        margin-left: 30px;
+    }
+
+    a.case-link{
+        width: fit-content;
+    }
+
+    input, textarea{
+        width: auto;
+    }
+
+    .msgs{
+        flex-direction: column;
+        width: max-content;
+    }
 }
