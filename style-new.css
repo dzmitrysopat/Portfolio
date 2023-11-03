@@ -82,10 +82,12 @@ hr{
 }
 
 header{
+    top: 0;
     padding: 2% 0;
-    position: sticky;
     display: flex;
+    position: sticky;
     align-items: center;
+    background-color: #fafafa;
     justify-content: space-between;
 }
 
@@ -157,7 +159,7 @@ main{
 .container{
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
+    gap: 50px;
     align-items: center;
 }
 
@@ -165,23 +167,24 @@ main{
     text-align: center;
 }
 
-#home,
-#double{
+#home, #about{
+    display: flex;
     gap: 15%;
-    flex-direction: row;   
-    flex-wrap: wrap;
+    /* flex-direction: row;    */
+    /* flex-wrap: wrap; */
     align-items: flex-start;
 }
 
 section.links{
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 80px;
     display: flex;
     gap: 10px;
 }
 
 img.selfie{
-    width: 25%;
+    /* width: 25%; */
+    height: 350px;
     border-radius: 50%;
 }
 
@@ -211,8 +214,8 @@ a.btn{
     justify-content: center;
     color: #fafafa;
     background-color: #383838;
-    border-radius: 15px;
-    border: 2px solid #383838;    
+    border: 2px solid #383838;
+    border-radius: 18px;    
     
 }
 
@@ -223,9 +226,32 @@ a.btn > i{
 a.white-btn{
     font-size: 20px;
     width: fit-content;
-    gap: 15px;
+    gap: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.description{
+    text-align: justify;
+    max-width: 535px;
+}
+
+div.cards{
+    display: flex;
+    gap: 15px;
+}
+
+div.card{
+    width: 125px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+div.card >h4{
+    color: #383838;
 }
 
