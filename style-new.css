@@ -366,7 +366,6 @@ label{
     font-size: 20px;
     font-weight: 500;
     margin-left: 5px;
-    display: none;
 }
 
 input, textarea{
@@ -378,5 +377,12 @@ input, textarea{
     border: 2px solid #dddddd;
 }
 
+textarea{
+    height: 100px;
+}
+
+.container >.parent-card{
+    width: auto ;
+}
 
 /* Contacts block */
