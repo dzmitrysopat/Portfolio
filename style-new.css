@@ -67,6 +67,7 @@ h4{
     color: #8d8e8d;
     font-weight: 400;
     font-size: 17px;
+    transition: all .4s;
 }
 
 h5{
@@ -252,7 +253,8 @@ div.cards{
     gap: 20px;
 }
 
-div.card{
+div.card,
+a.card{
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -264,13 +266,22 @@ div.card{
     padding: 15px 20px;
 }
 
-div.card >h4{
+a.card{
+    cursor: pointer;
+}
+
+a.card:hover > div.skill-item > i,
+.skill-item:hover > i,
+a.card:hover > div.skill-item > div.skill-description > h4{
+    color: #f7941d;
+}
+
+div.card > h4{
     color: #383838;
 }
 
 section.container > .btn{
     align-self: flex-start;
-    color: #383838;
 }
 
 .parent-card{
@@ -316,4 +327,18 @@ li{
     gap: 10px;
     font-size: 20px;
     display: flex;
+}
+
+#contact > .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.parent-card > a.card{
+    padding: 10px 50px 10px 10px;
+}
+
+a.card > .skill-item{
+    padding: 0;
 }
