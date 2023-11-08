@@ -167,12 +167,17 @@ main{
     text-align: center;
 }
 
-#home, #about{
+#home, #about, #double{
     display: flex;
     gap: 15%;
-    /* flex-direction: row;    */
-    /* flex-wrap: wrap; */
     align-items: flex-start;
+    justify-content: center;
+}
+
+#double{
+    justify-content:space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
 }
 
 section.links{
@@ -239,10 +244,13 @@ a.white-btn{
 
 div.cards{
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 div.card{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
     width: 125px;
     background-color: #fff;
     border: 2px solid #ddd;
@@ -255,3 +263,6 @@ div.card >h4{
     color: #383838;
 }
 
+.container > .btn{
+    align-self: flex-start;
+}
