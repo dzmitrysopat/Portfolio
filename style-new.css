@@ -60,7 +60,7 @@ h2{
 h3{
     font-size: 1.5rem;
     font-weight: 500;
-    color: #f7941d;
+    /* color: #f7941d; */
 }
 
 h4{
@@ -205,6 +205,10 @@ section.information{
     gap: 10px;
 }
 
+section.information > h3{
+    color: #f7941d;
+}
+
 .description{
     color: #8d8e8d;
 }
@@ -270,12 +274,6 @@ a.card{
     cursor: pointer;
 }
 
-a.card:hover > div.skill-item > i,
-.skill-item:hover > i,
-a.card:hover > div.skill-item > div.skill-description > h4{
-    color: #f7941d;
-}
-
 div.card > h4{
     color: #383838;
 }
@@ -284,6 +282,8 @@ section.container > .btn{
     align-self: flex-start;
 }
 
+
+/* Skills & Services block */
 .parent-card{
     gap: 25px;
     display: flex;
@@ -293,10 +293,6 @@ section.container > .btn{
     border-radius: 10px;
     text-align: center;
     padding: 25px 40px;
-}
-
-section.container-name > h3{
-    color: #383838;
 }
 
 div.skill-items{
@@ -328,7 +324,10 @@ li{
     font-size: 20px;
     display: flex;
 }
+/* Skills & Services block */
 
+
+/* Contacts block */
 #contact > .container{
     display: flex;
     flex-direction: row;
@@ -342,3 +341,16 @@ li{
 a.card > .skill-item{
     padding: 0;
 }
+
+a.card:hover > div.skill-item > i,
+.skill-item:hover > i,
+a.card:hover > div.skill-item > div.skill-description > h4{
+    color: #f7941d;
+}
+
+div.parent-card > h3{
+    align-self: flex-start;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Contacts block */
