@@ -273,15 +273,25 @@ section.container > .btn{
     color: #383838;
 }
 
+.parent-card{
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    padding: 25px 40px;
+}
+
 section.container-name > h3{
     color: #383838;
 }
 
 div.skill-items{
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    column-gap: 50px;
-    row-gap: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
 }
 
 div.skill-description > h4{
@@ -290,6 +300,7 @@ div.skill-description > h4{
 
 div.skill-item{
     gap: 10px;
+    padding: 15px;
     display: flex;
     text-align: left;
 }
@@ -305,15 +316,4 @@ li{
     gap: 10px;
     font-size: 20px;
     display: flex;
-}
-
-.parent-card{
-    display: flex;
-    flex-direction: column;
-    /* gap: 15px; */
-    background-color: #fff;
-    border: 2px solid #ddd;
-    border-radius: 10px;
-    text-align: center;
-    padding: 25px 40px;
 }
