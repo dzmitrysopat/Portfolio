@@ -163,7 +163,8 @@ main{
     align-items: center;
 }
 
-.container-name{
+.container-name,
+section.container-name > p{
     text-align: center;
 }
 
@@ -179,6 +180,7 @@ main{
 }
 
 #double{
+    gap: 0;
     justify-content:space-evenly;
     flex-direction: row;
 }
@@ -277,21 +279,20 @@ section.container-name > h3{
 
 div.skill-items{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 50px;
+    row-gap: 50px;
+}
+
+div.skill-description > h4{
+    color: #383838;
 }
 
 div.skill-item{
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    gap: 10px;
+    display: flex;
+    text-align: left;
 }
-
-.skill-item > img { grid-area: 1 / 1 / 3 / 2; }
-.skill-item > h4 { grid-area: 1 / 2 / 2 / 3; }
-.skill-item > h5 { grid-area: 2 / 2 / 3 / 3; }
 
 ul{
     gap: 30px;
@@ -304,16 +305,15 @@ li{
     gap: 10px;
     font-size: 20px;
     display: flex;
-    align-items: center;
 }
 
-.skill-card{
+.parent-card{
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    /* gap: 15px; */
     background-color: #fff;
     border: 2px solid #ddd;
     border-radius: 10px;
     text-align: center;
-    padding: 20px 40px;
+    padding: 25px 40px;
 }
