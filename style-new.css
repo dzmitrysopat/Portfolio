@@ -70,7 +70,7 @@ h4{
     transition: all .4s;
 }
 
-h5{
+h5, h5 > i{
     color: #8d8e8d;
     font-weight: 100;
 }
@@ -185,6 +185,18 @@ section.container-name > p{
     gap: 0;
     justify-content:space-evenly;
     flex-direction: row;
+}
+
+#qualification > section.container{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.skill-description > h5{
+gap: 10px;
+    display: flex;
+align-items: center;
 }
 
 section.links{
@@ -345,7 +357,7 @@ div.dot{
 
 div.v-line{
     background-color: #383838;
-    width: 3px;
+    width: 4px;
     height: 100px;
 }
 /* Qualification */
