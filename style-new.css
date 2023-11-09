@@ -292,7 +292,7 @@ section.container > .btn{
     background-color: #fff;
     border: 2px solid #ddd;
     border-radius: 10px;
-    text-align: center;
+    align-items: center;
     padding: 25px 40px;
 }
 
@@ -366,6 +366,7 @@ label{
     font-size: 20px;
     font-weight: 500;
     margin-left: 5px;
+    margin-bottom: 5px;
 }
 
 input, textarea{
@@ -388,7 +389,8 @@ button[type=submit]{
 }
 
 section.container > div.parent-card:first-child{
-    height: 514px;
+    align-self: stretch
+
 }
 
 /* Contacts block */
