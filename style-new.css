@@ -157,7 +157,8 @@ main{
     gap: 150px;
 }
 
-.container{
+.container,
+section.container{
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -380,18 +381,14 @@ textarea{
     height: 100px;
 }
 
-.container >.parent-card{
-    width: auto;
-}
-
 button[type=submit]{
     width: 100%;
     padding: 0;
     border-radius: 10px;
 }
 
-#contact:nth-child(2){
-    height: 800px;
+section.container > div.parent-card:first-child{
+    height: 514px;
 }
 
 /* Contacts block */
