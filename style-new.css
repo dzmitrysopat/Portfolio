@@ -231,7 +231,6 @@ a.btn, button.btn{
     background-color: #383838;
     border: 2px solid #383838;
     border-radius: 18px;    
-    
 }
 
 a.btn > i,
@@ -382,7 +381,17 @@ textarea{
 }
 
 .container >.parent-card{
-    width: auto ;
+    width: auto;
+}
+
+button[type=submit]{
+    width: 100%;
+    padding: 0;
+    border-radius: 10px;
+}
+
+#contact:nth-child(2){
+    height: 800px;
 }
 
 /* Contacts block */
