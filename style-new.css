@@ -195,6 +195,10 @@ section.container-name > p{
     flex-direction: row;
 }
 
+#qualification{
+    gap: 0;
+}
+
 #qualification > section.container{
     flex-direction: row;
     align-items: flex-start;
@@ -259,13 +263,18 @@ button.btn > i{
     color: #fafafa;
 }
 
-a.white-btn{
+a.white-btn,
+button.white-btn{
     font-size: 20px;
     width: fit-content;
     gap: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: inherit;
+    border: none;
+    transition: all .4s;
+    cursor: pointer;
 }
 
 .description{
@@ -349,7 +358,17 @@ li{
 
 
 /* Qualification */
+#qualification{
+    gap: 50px;
+    align-items: center;
+}
 
+.tabs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
 
 section.history-line{
     display: flex;
@@ -359,15 +378,15 @@ section.history-line{
 }
 
 div.dot{
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-color: #383838;
     border-radius: 50%;
 }
 
 div.v-line{
     background-color: #383838;
-    width: 3px;
+    width: 4px;
     height: 100px;
 }
 
@@ -376,7 +395,7 @@ div.v-line{
     grid-template-columns: auto;
     grid-template-rows:  1fr;
     grid-column-gap: 0px;
-    grid-row-gap: 150px;
+    grid-row-gap: 170px;
 }
 
 .skill-description{ 
@@ -393,7 +412,7 @@ section.qualification-container:nth-child(5){
 grid-template-columns: 1fr;
 grid-template-rows: repeat(4, 1fr);
 grid-column-gap: 0px;
-grid-row-gap: 30px;
+grid-row-gap: 40px;
 }
 
 section.qualification-container:nth-child(4) > .skill-description,
@@ -406,17 +425,8 @@ section.qualification-container:nth-child(5) > .skill-description:nth-child(2){
     grid-area: 4 / 1 / 5 / 2;
 }
 
-#qualification{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-    
-    .div1 { grid-area: 2 / 1 / 3 / 2; }
-    .div2 { grid-area: 4 / 1 / 5 / 2; }
 /* Qualification */
+
 
 /* Contacts block */
 #contact > .container{
@@ -436,7 +446,13 @@ a.card > .skill-item{
 
 a.card:hover > div.skill-item > i,
 .skill-item:hover > i,
-a.card:hover > div.skill-item > div.skill-description > h4{
+a.card:hover > div.skill-item > div.skill-description > h4,
+a.white-btn:hover,
+a.white-btn:hover > i,
+button.white-btn:hover,
+button.white-btn:hover > i,
+button.white-btn.active,
+button.white-btn.active > i{
     color: #f7941d;
 }
 
