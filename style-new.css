@@ -30,10 +30,6 @@ body{
     display: none !important;  
 }
 
-.active{
-    display: grid;
-}
-
 ::-webkit-scrollbar{
 	width: 10px;
 }
