@@ -199,6 +199,7 @@ section.container-name > p{
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
+    position: relative;
 }
 
 .skill-description > h5{
@@ -367,6 +368,7 @@ li{
 }
 
 section.history-line{
+    position: static;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -388,7 +390,7 @@ div.v-line{
 
 .qualification-container{
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr;
     grid-template-rows:  1fr;
     grid-column-gap: 0px;
     grid-row-gap: 170px;
