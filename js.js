@@ -1,3 +1,28 @@
+var swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        type: 'bullets',
+    },
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+        delay: 5000,
+    },
+    keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+    },
+});
+
+
 const education = document.querySelectorAll(".education");
 const work = document.querySelectorAll(".work");
 
@@ -23,27 +48,3 @@ function hide(){
     document.getElementById("WorkBtn").classList.remove("active");
     document.getElementById("EducationBtn").classList.add("active");
 }
-
-var swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        type: 'bullets',
-    },
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    autoplay: {
-        delay: 5000,
-    },
-    keyboard: {
-        enabled: true,
-        onlyInViewport: false,
-    },
-});
