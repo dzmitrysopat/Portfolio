@@ -89,6 +89,7 @@ hr{
 header{
     top: 0;
     padding: 2% 0;
+    z-index: 3;
     display: flex;
     position: sticky;
     align-items: center;
