@@ -591,6 +591,39 @@ section.container > div.parent-card:first-child{
 }
 /* Contacts block */
 
+#progress {
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+    height: 70px;
+    width: 70px;
+    display: none;
+    place-items: center;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 2;
+}
+
+#progress-value{
+    display: block;
+    height: calc(100% - 15px);
+    width: calc(100% - 15px);
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    /* place-items: center; */
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    color: #001a2e;
+}
+
+span > i.uil-arrow-up{
+    font-size: 37px;
+    border-radius: 50%;
+}
+
 
 /* dark scheme */
 .dark body{
@@ -616,7 +649,8 @@ section.container > div.parent-card:first-child{
 .dark textarea,
 .dark a.btn:hover,
 .dark a.btn:hover > i,
-.dark button.btn:hover > i{
+.dark button.btn:hover > i,
+.dark label{
     color: #ddd;
     background-color: inherit;
 }
@@ -633,8 +667,12 @@ section.container > div.parent-card:first-child{
 .dark div.card:hover > h4,
 .dark div.swiper-button-next:hover,
 .dark div.swiper-button-prev:hover,
-.dark span.swiper-pagination-bullet-active{
+.dark i.uil-arrow-up:hover{
     color: #f7941d;
+}
+
+.dark span.swiper-pagination-bullet-active{
+    background-color: #f7941d;
 }
 
 .dark button.btn:hover{
@@ -648,13 +686,16 @@ section.container > div.parent-card:first-child{
     background-color: #ddd;
 }
 
-
 .dark a.btn{
     border: 2px solid #ddd;
 }
 
 .dark a.card:hover{
     border: 2px solid #f7941d;
+}
+
+.dark i.uil-arrow-up{
+    color: #383838;
 }
 
 /* dark scheme */
