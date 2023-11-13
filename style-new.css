@@ -431,7 +431,7 @@ section.qualification-container:nth-child(5) > .skill-description:nth-child(2){
     display: grid;
 grid-template-columns: repeat(2, auto);
 grid-template-rows: repeat(3, auto);
-grid-column-gap: 50px;
+grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
 
@@ -453,7 +453,7 @@ grid-row-gap: 0px;
 
 .case a{
     grid-area: 3 / 2 / 4 / 3;
-    height: 40px; 
+    height: 40px;
 }
 
 .swiper{
@@ -557,8 +557,7 @@ textarea{
     height: 100px;
 }
 
-button[type=submit],
-.case > .btn {
+button[type=submit]{
     width: 100%;
     padding: 0;
     border-radius: 10px;
