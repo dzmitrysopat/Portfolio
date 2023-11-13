@@ -426,6 +426,33 @@ section.qualification-container:nth-child(5) > .skill-description:nth-child(2){
 
 /* Qualification */
 
+/* cases */
+.case{
+    display: grid;
+grid-template-columns: repeat(2, auto);
+grid-template-rows: repeat(3, auto);
+grid-column-gap: 50px;
+grid-row-gap: 0px;
+}
+
+.case img { 
+    grid-area: 1 / 1 / 4 / 2; 
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.case h3{
+    grid-area: 1 / 2 / 2 / 3;
+    font-size: 30px;
+}
+
+.case p{grid-area: 2 / 2 / 3 / 3;
+    font-size: 20px;
+}
+.case a { grid-area: 3 / 2 / 4 / 3;
+height: 40px; }
+
+/* cases */
 
 /* Contacts block */
 #contact > .container{
@@ -486,7 +513,8 @@ textarea{
     height: 100px;
 }
 
-button[type=submit]{
+button[type=submit],
+.case > .btn {
     width: 100%;
     padding: 0;
     border-radius: 10px;
