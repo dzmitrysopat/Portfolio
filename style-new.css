@@ -313,6 +313,7 @@ a.card{
     border-radius: 10px;
     text-align: center;
     padding: 15px 20px;
+    transition: all .4s;
 }
 
 a.card{
@@ -615,8 +616,6 @@ section.container > div.parent-card:first-child{
 .dark textarea,
 .dark a.btn:hover,
 .dark a.btn:hover > i,
-.dark i:hover,
-.dark div.card:hover > h4
 .dark button.btn:hover > i{
     color: #ddd;
     background-color: inherit;
@@ -625,9 +624,23 @@ section.container > div.parent-card:first-child{
 .dark .btn,
 .dark .btn > i,
 .dark button[type=submit],
-.dark span{
+.dark span.swiper-pagination-bullet{
     background-color: #ddd;
     color: inherit;
+}
+
+.dark i:hover,
+.dark div.card:hover > h4,
+.dark div.swiper-button-next:hover,
+.dark div.swiper-button-prev:hover,
+.dark span.swiper-pagination-bullet-active{
+    color: #f7941d;
+}
+
+.dark button.btn:hover{
+    background-color: inherit;
+    color: #ddd;
+    border: 2px solid #ddd;
 }
 
 .dark div.dot,
@@ -638,6 +651,10 @@ section.container > div.parent-card:first-child{
 
 .dark a.btn{
     border: 2px solid #ddd;
+}
+
+.dark a.card:hover{
+    border: 2px solid #f7941d;
 }
 
 /* dark scheme */
