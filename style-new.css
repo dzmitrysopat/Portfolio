@@ -458,7 +458,7 @@ grid-row-gap: 0px;
 
 .swiper{
     position: relative;
-    width: 1100px;
+    width: 1200px;
 }
 
 span.swiper-pagination-bullet{
@@ -482,6 +482,14 @@ div.swiper-button-next,
 div.swiper-button-prev{
     top: 50%;
     margin: 0;
+    color: #383838;
+    font-weight: 700;
+    transition: all .4s;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover{
+    color: #f7941d;
 }
 
 .swiper-wrapper{
