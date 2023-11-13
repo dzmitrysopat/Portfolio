@@ -100,7 +100,6 @@ header{
 
 footer{
     padding: 20px 0;
-    text-align: center;
 }
 
 #logo{
@@ -181,11 +180,10 @@ section.container-name > p{
     text-align: center;
 }
 
-#home, #about, #double{
+#home, .about, #double{
     display: flex;
     gap: 15%;
     align-items: flex-start;
-    /* justify-content: center; */
 }
 
 #about{
@@ -224,7 +222,7 @@ section.links{
 
 img.selfie{
     /* width: 25%; */
-    height: 350px;
+    max-height: 350px;
     border-radius: 50%;
 }
 
@@ -340,6 +338,8 @@ section.container > .btn{
     align-items: center;
     padding: 25px 40px;
 }
+
+
 
 div.skill-items{
     display: grid;
@@ -548,6 +548,10 @@ button.white-btn.active > i{
     color: #f7941d;
 }
 
+a.card:hover{
+    border: 2px solid #f7941d;
+}
+
 div.parent-card > h3{
     align-self: flex-start;
     border-bottom: 2px solid #ddd;
@@ -587,7 +591,7 @@ button[type=submit],
 }
 
 section.container > div.parent-card:first-child{
-    align-self: stretch
+    align-self: stretch;
 }
 /* Contacts block */
 
@@ -620,10 +624,9 @@ section.container > div.parent-card:first-child{
 }
 
 span > i.uil-arrow-up{
-    font-size: 37px;
+    font-size: 35px;
     border-radius: 50%;
 }
-
 
 /* dark scheme */
 .dark body{
@@ -688,10 +691,6 @@ span > i.uil-arrow-up{
 
 .dark a.btn{
     border: 2px solid #ddd;
-}
-
-.dark a.card:hover{
-    border: 2px solid #f7941d;
 }
 
 .dark i.uil-arrow-up{

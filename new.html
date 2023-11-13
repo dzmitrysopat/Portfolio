@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front-End</title>
     <link rel="stylesheet" href="./style-new.css">
+    <link rel="stylesheet" href="./mobile.css">
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" id="favicon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
@@ -15,7 +16,7 @@
     <header id="header" class="header">
         <a href="new.html" id="logo" class="logo"><img src="/img/logo.png" class="logo-img" id="logoImg" alt="">Dzmitry</a>
         <nav id="navigation" class="navigation">
-            <a href="#home-anchor" class="nav-link">Home</a>
+            <a href="#home-anchor" class="nav-link active-link">Home</a>
             <a href="#about-anchor" class="nav-link">About</a>
             <a href="#double-anchor" class="nav-link">Skills</a>
             <a href="#qualification-anchor" class="nav-link">Qualification</a>
@@ -26,7 +27,7 @@
     </header>
     <div class="anchor" id="home-anchor"></div>
     <main id="main" class="main">
-        <article id="home" class="">
+        <article id="home">
             <section class="links" id="links">
                 <a href=""><i class="uil uil-linkedin-alt"></i></a>
                 <a href=""><i class="uil uil-github-alt"></i></a>
@@ -46,14 +47,15 @@
             </section>
             <img src="./img/photo.jpg" class="selfie" alt="">
         </article>
+
         <div class="anchor" id="about-anchor"></div>
 
-        <article class="container">
+        <article class="container" id="about">
             <section class="container-name">
                 <h2>About Me</h2>
                 <h4>My introdution</h4>
             </section>
-            <section class="" id="about">
+            <section class="about">
                 <img src="./img/photo.jpg" class="selfie" alt="">
                 <section class="container">
                     <div class="cards">
@@ -74,9 +76,8 @@
                         </div>
                     </div>
                     <p class="description">As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.</p>
-                    <a href="#contact-anchor" class="btn" download="">Download CV<i class="uil uil-message"></i></a>
+                    <a href="" class="btn" download="">Download CV<i class="uil uil-message"></i></a>
                 </section>
-                
             </section>
         </article>
 
@@ -180,7 +181,7 @@
 
         <div class="anchor" id="qualification-anchor"></div>
 
-        <article class="container" id="qualification">
+        <article class="container" id="qualification" >
             <section class="container-name">
                 <h2>Qualification</h2>
                 <h4>My personal jorney</h4>
@@ -330,7 +331,6 @@
                         </div>
                     </a>
                 </div>
-
                 <div class="parent-card container">
                     <h3>Write me to collab</h3>
                     <form action="" method="post">
