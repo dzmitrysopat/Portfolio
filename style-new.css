@@ -93,7 +93,7 @@ header{
     display: flex;
     position: sticky;
     align-items: center;
-    background-color: #fafafa;
+    background-color: inherit;
     justify-content: space-between;
 }
 
@@ -587,5 +587,31 @@ button[type=submit],
 section.container > div.parent-card:first-child{
     align-self: stretch
 }
-
 /* Contacts block */
+
+
+/* dark scheme */
+.dark body{
+    color: #fff;
+    background-color: #383838;
+}
+
+.dark a,
+.dark i,
+.dark h1,
+.dark h2,
+.dark h3,
+.dark > h4,
+.dark div.card,
+.dark div.card > h4,
+.dark .parent-card,
+.dark div.skill-description > h4,
+.dark li,
+.dark div.swiper-button-next,
+.dark div.swiper-button-prev
+.dark label{
+    color: #ddd;
+    background-color: inherit;
+}
+
+/* dark scheme */
