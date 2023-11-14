@@ -1,7 +1,7 @@
 /* 992px 768px  576px 350px*/  
 
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 600px){
     main{
         margin: 50px 25px;
     }
@@ -70,11 +70,15 @@
     }
 
     .case > img{
-        max-width: 400px;
+        max-width: 90vw;
     }
 
-    .case > a.btn{
-        max-width: 400px ;
+    .case > .description{
+        max-width: 90vw;
+    }
+
+    a.btn{
+        max-width: 90vw;
     }
 
     #contact > section.container{
@@ -85,6 +89,7 @@
     section.container > div.parent-card:first-child{
         align-self: stretch;
         border: none;
+        flex-wrap: wrap;
         flex-direction: row;
     }
 
@@ -93,15 +98,19 @@
     }
 
     section.container > div.parent-card:first-child > a.card {
-        /* border: none; */
+        border: none;
     }
 
+    div.swiper-button-next,
+    div.swiper-button-prev{
+        display: none;
+}
 
     div#progress{
         display: none !important;
     }
 
     input, textarea{
-        /* width: 350px; */
+        width: 70vw;
     }
 }
