@@ -11,6 +11,10 @@
         justify-content: center;
     } */
 
+    nav{
+        display: none;
+    }
+
     #home{
         display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -21,7 +25,8 @@
 
     #home > #links { grid-area: 1 / 1 / 2 / 2; }
     #home > #information { grid-area: 2 / 1 / 3 / 3; }
-    #home > img { grid-area: 1 / 2 / 2 / 3;}
+    #home > img { grid-area: 1 / 2 / 2 / 3;
+    max-width: 75vw;}
 
     a.btn{
         padding: 5px 10px;
@@ -58,7 +63,7 @@
     }
 
     .swiper{
-        width: 500px;
+        width: 90vw;
     }
 
     .case{
@@ -70,15 +75,15 @@
     }
 
     .case > img{
-        max-width: 90vw;
+        max-width: 85vw;
     }
 
     .case > .description{
-        max-width: 90vw;
+        max-width: 85vw;
     }
 
     a.btn{
-        max-width: 90vw;
+        max-width: 85vw;
     }
 
     #contact > section.container{
@@ -93,18 +98,26 @@
         flex-direction: row;
     }
 
-    section.container > div.parent-card:first-child > h3{
+    section.container > div.parent-card:first-child > h3,
+    section.container > div.parent-card:first-child > a.card > div.skill-item > div.skill-description{
         display: none;
     }
 
     section.container > div.parent-card:first-child > a.card {
+        width: auto;
+        padding: 0;
         border: none;
     }
 
     div.swiper-button-next,
     div.swiper-button-prev{
         display: none;
-}
+    }
+
+    .swiper-pagination{
+        /* align-self: center; */
+    }
+
 
     div#progress{
         display: none !important;
