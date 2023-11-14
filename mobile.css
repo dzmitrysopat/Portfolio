@@ -30,6 +30,11 @@
 
     .uil-apps{
         display: block;
+        position: absolute;
+        right: 15%;
+        bottom: 150px;
+        z-index: 15;
+
     }
     
 
@@ -123,6 +128,7 @@
         border: none;
         flex-wrap: wrap;
         flex-direction: row;
+        background-color: inherit;
     }
 
     section.container > div.parent-card:first-child > h3,
@@ -131,6 +137,7 @@
     }
 
     section.container > div.parent-card:first-child > a.card {
+        background-color: inherit;
         width: auto;
         padding: 0;
         border: none;

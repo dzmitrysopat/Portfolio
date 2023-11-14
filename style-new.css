@@ -164,6 +164,61 @@ nav a.active-link{
     display: none;
 }
 
+#menuToggle input
+{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: 15px;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+}
+
+#menu{
+    background-color: #fafafa;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    position: absolute;
+    border: 2px solid #808080;
+    border-bottom: none;
+    border-radius: 25px 25px 0 0;
+    z-index: 10;
+    width: 97vw;
+    align-self: center;
+    padding-bottom: 50px;
+
+}
+
+#menuToggle input:checked ~ .uil-apps{
+    opacity: 0.9;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #fff;
+}
+
+#menuToggle input:checked ~ ul{
+    transform: none;
+}
+
+a.mob-link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .4s ;
+}
+
+a.mob-link:hover,
+a.mob-link:hover > i{
+    cursor: pointer;
+    color: #f7941d;
+}
+
 main{
     margin: 150px 0;
     display: flex;
@@ -629,7 +684,8 @@ span > i.uil-arrow-up{
 }
 
 /* dark scheme */
-.dark body{
+.dark body,
+.dark #menu{
     color: #fff;
     background-color: #383838;
 }
