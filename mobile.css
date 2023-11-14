@@ -1,4 +1,7 @@
-@media screen and (max-width: 1050px){
+/* 992px 768px  576px 350px*/  
+
+
+@media screen and (max-width: 992px){
     main{
         margin: 50px 25px;
     }
@@ -28,11 +31,6 @@
     div.btns > .white-btn{
         display: none;
     }
-
-    /* section.links{
-        flex-direction: row;
-        justify-self: left;
-    } */
 
     .about{
         gap: 25px;
@@ -90,14 +88,21 @@
         flex-direction: row;
     }
 
-    section.container > div.parent-card:first-child > h3{
+    section.container > div.parent-card:first-child > h3,
+    section.container > div.parent-card:first-child > a.card > div.skill-description {
         display: none;
-}
+    }
+
+    section.container > div.parent-card:first-child > a.card {
+        border: none;
+    }
+
+
     div#progress{
         display: none !important;
     }
 
     input, textarea{
-        /* width: 300px; */
+        /* width: 350px; */
     }
 }
