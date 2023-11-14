@@ -29,12 +29,15 @@
     }
 
     .uil-apps{
-        display: block;
+        display: block !important;
         position: absolute;
-        right: 15%;
-        bottom: 150px;
-        z-index: 15;
+        right: 10%;
+        bottom: 18%;
+        z-index: 5;
+    }
 
+    .burger-menu{
+        display: block;
     }
     
 
