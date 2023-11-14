@@ -160,6 +160,10 @@ nav a.active-link{
     color: #f7941d;
 }
 
+.uil-apps{
+    display: none;
+}
+
 main{
     margin: 150px 0;
     display: flex;
