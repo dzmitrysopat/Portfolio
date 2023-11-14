@@ -2,11 +2,23 @@
     main{
         margin: 50px 25px;
     }
-    #home{
+    /* #home{
         flex-wrap: wrap-reverse;
         align-items: center;
-        
+        justify-content: center;
+    } */
+
+    #home{
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     }
+
+    #home > #links { grid-area: 1 / 1 / 2 / 2; }
+    #home > #information { grid-area: 2 / 1 / 3 / 3; }
+    #home > img { grid-area: 1 / 2 / 2 / 3;}
 
     a.btn{
         padding: 5px 10px;
@@ -17,9 +29,10 @@
         display: none;
     }
 
-    section.links{
+    /* section.links{
         flex-direction: row;
-    }
+        justify-self: left;
+    } */
 
     .about{
         gap: 25px;
@@ -82,5 +95,9 @@
 }
     div#progress{
         display: none !important;
+    }
+
+    input, textarea{
+        /* width: 300px; */
     }
 }

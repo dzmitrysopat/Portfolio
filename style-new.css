@@ -548,10 +548,6 @@ button.white-btn.active > i{
     color: #f7941d;
 }
 
-a.card:hover{
-    border: 2px solid #f7941d;
-}
-
 div.parent-card > h3{
     align-self: flex-start;
     border-bottom: 2px solid #ddd;
@@ -691,6 +687,10 @@ span > i.uil-arrow-up{
 
 .dark a.btn{
     border: 2px solid #ddd;
+}
+
+.dark a.card:hover{
+    border: 2px solid #f7941d;
 }
 
 .dark i.uil-arrow-up{
