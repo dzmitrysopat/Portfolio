@@ -1,7 +1,7 @@
 /* 992px 768px  576px 350px*/  
 
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 576px){
     main{
         margin: 50px 25px;
     }
@@ -39,7 +39,7 @@
     }
 
     div.card{
-        /* width: auto; */
+        width: auto;
         padding: 10px;
     }
 
@@ -88,13 +88,12 @@
         flex-direction: row;
     }
 
-    section.container > div.parent-card:first-child > h3,
-    section.container > div.parent-card:first-child > a.card > div.skill-description {
+    section.container > div.parent-card:first-child > h3{
         display: none;
     }
 
     section.container > div.parent-card:first-child > a.card {
-        border: none;
+        /* border: none; */
     }
 
 
