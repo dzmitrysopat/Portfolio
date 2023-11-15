@@ -38,6 +38,11 @@ body{
 	background: #808080;
 }
 
+.slide-top {
+	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
 i{
     font-size: 28px;
     font-weight: 100;
@@ -96,6 +101,7 @@ header{
     align-items: center;
     background-color: inherit;
     justify-content: space-between;
+    border-top: 2px solid #dfdfdf;
 }
 
 footer{
@@ -171,29 +177,13 @@ nav a.active-link{
     right: 12%;
 }
 
-#header nav input
-{
-    display: block;
-    width: 40px;
-    height: 32px;
-    position: absolute;
-    bottom: -7px;
-    left: 15px;
-    cursor: pointer;
-    opacity: 0; /* hide this */
-    z-index: 2; /* and place it over the hamburger */
-    -webkit-touch-callout: none;
-}
-
-.burger-menu{
-    position: relative;
-    display: none;
-}
 
 #menu{
-    /* position: relative; */
+    position: absolute;
     background-color: #fafafa;
-    display: grid;
+    display: none;
+    bottom: 0;
+    left: 0;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 10px;
@@ -205,7 +195,7 @@ nav a.active-link{
     z-index: 10;
     width: 98vw;
     align-self: center;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
 
 #menuToggle input:checked ~ .uil-apps{

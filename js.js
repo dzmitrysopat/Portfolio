@@ -96,3 +96,17 @@ let calcScrollValue = () => {
   };
   window.onscroll = calcScrollValue;
   window.onload = calcScrollValue;
+
+  // function nav(){
+  //   document.getElementById("menu").classList.add("slide-top");
+  // }
+
+  document.querySelector('.uil-apps').addEventListener('click', (event) => {
+    document.getElementById("menu").classList.add("slide-top");
+    document.getElementById("menu").classList.add("burger-menu");
+  });
+
+  document.querySelector('.uil-times').addEventListener('click', (event) => {
+    document.getElementById("menu").classList.remove("slide-top");
+    document.getElementById("menu").classList.remove("burger-menu");
+  });
