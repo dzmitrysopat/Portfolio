@@ -51,8 +51,6 @@
     h1{
         font-size: 2.4rem;
     }
-    
-    
 
     #home{
         display: grid;
@@ -110,8 +108,7 @@
     }
 
     #double > #services > section > .parent-card{
-        padding: 25px;
-        flex-shrink: 1;
+        padding: 15px;
     }
 
     .swiper{
