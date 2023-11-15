@@ -61,6 +61,11 @@ body{
 	background: #808080;
 }
 
+::selection {
+    background: #f7941d; 
+    color: #fff;
+}
+
 i{
     font-size: 28px;
     font-weight: 100;
@@ -780,6 +785,11 @@ span > i.uil-arrow-up{
 
 .dark i.uil-arrow-up{
     color: #383838;
+}
+
+.dark ::selection {
+    background: #8d8e8d; 
+    color: #fff;
 }
 
 /* dark scheme */
