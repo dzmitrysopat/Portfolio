@@ -20,7 +20,8 @@
         width: 95vw;
     }
 
-    nav > a{
+    nav > a,
+    .anchor{
         display: none;
     }
 
