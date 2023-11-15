@@ -4,6 +4,7 @@
 @media screen and (max-width: 600px){
     main{
         margin: 50px 25px;
+        gap: 100px;
     }
 
     /* #home{
@@ -11,6 +12,12 @@
         align-items: center;
         justify-content: center;
     } */
+
+
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
 
     header{
         padding: 2%;
