@@ -3,414 +3,377 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dzmitry Sopat</title>
+    <title>Front-End</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./mobile.css">
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon" id="favicon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="mobile.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 </head>
-<body>
-    <header>
-            <a href="index.html" class="logo" id="logo"><img src="./img/logo.png" class="logo-img" id="logoImg" alt="">Dzmitry</a>
-            <nav id="nav" class="navigation">
-                <a href="#home-anchor" class="nav-item active-link lng-home">Home</a>
-                <a href="#about-anchor" class="nav-item lng-about">About</a>
-                <a href="#double-anchor" class="nav-item lng-skills">Skills</a>
-                <a href="#qualify-anchor" class="nav-item lng-qualify">Qualification</a>
-                <a href="#portfolio-anchor" class="nav-item lng-portfolio">Portfolio</a>
-                <a href="#contact-anchor" class="nav-item lng-contacts">Contact</a>
-                <i class="uil uil-moon theme"></i>
-            </nav>
+<body class="body_hide">
+    <header id="header" class="header">
+        <a href="./index.html" id="logo" class="logo"><img src="/img/logo.png" class="logo-img" id="logoImg" alt="">Dzmitry</a>
+        <nav id="navigation" class="navigation">
+            <a href="#home-anchor" class="nav-link active-link">Home</a>
+            <a href="#about-anchor" class="nav-link">About</a>
+            <a href="#double-anchor" class="nav-link">Skills</a>
+            <a href="#qualification-anchor" class="nav-link">Qualification</a>
+            <a href="#portfolio-anchor" class="nav-link">Portfolio</a>
+            <a href="#contact-anchor" class="nav-link">Contact</a>
+            <i class="uil uil-moon theme"></i>
+            <i class="uil uil-apps"></i>
+            <ul id="menu" class="">
+                <a href="#home" class="mob-link" onclick="burgerNav()"><i class="uil uil-estate"></i>Home</a>
+                <a href="#about" class="mob-link" onclick="burgerNav()"><i class="uil uil-user"></i>About</a>
+                <a href="#double" class="mob-link" onclick="burgerNav()"><i class="uil uil-graph-bar"></i>Skills</a>
+                <a href="#qualification" class="mob-link" onclick="burgerNav()"><i class="uil uil-graduation-cap"></i>Qualification</a>
+                <a href="#portfolio" class="mob-link" onclick="burgerNav()"><i class="uil uil-bag-alt"></i>Portfolio</a>
+                <a href="#contact" class="mob-link" onclick="burgerNav()"><i class="uil uil-message"></i>Contact</a>
+                <i class="uil uil-times" id="close"></i>
+            </ul>
+        </nav>
     </header>
-    <div id="home-anchor" class="anchor"></div>  
-    <main>
+    <div class="anchor" id="home-anchor"></div>
+    <main id="main" class="main">
         <article id="home">
-            <section class="links">
-                <a href="https://by.linkedin.com/in/dzmitry-sopat-796473251" class="link"><i class="uil uil-linkedin-alt"></i></a>
-                <a href="https://github.com/dzmitrysopat" target="_blank" alt="github"><i class="uil uil-github-alt"></i></a>
-                <a href="https://t.me/dimka_myxa"><i class="uil uil-telegram-alt"></i></a>
+            <section class="links" id="links">
+                <a href=""><i class="uil uil-linkedin-alt"></i></a>
+                <a href=""><i class="uil uil-github-alt"></i></a>
+                <a href=""><i class="uil uil-telegram-alt"></i></a>
             </section>
-            <section class="information">
-                <h1 class="lng-name">Dzmitry Sopat 🖐</h1>
-                <h3 class="lng-profession">Front-End Developer</h3>
+            <section id="information" class="information">
+                <h1>Dzmitry Sopat 🖐</h1>
+                <h3>Front-End Developer</h3>
                 <hr>
-                <p class="description lng-fewwords">Hi! I'm begginer and passionate Front-End Developer <br> based in Belarus. 📍</p>
-                <section class="buttons">
-                    <a href="#contact-anchor" class="button lng-btncontact">Contact Me<i class="uil uil-message"></i></i></a>
-                    <a href="#about-anchor" class="white-btn" id="button"><i class="uil uil-mouse-alt scroll"></i> Scroll down <i class="uil uil-arrow-down"></i></a>
-                </section>
+                <p class="description">
+                    Hi! I'm begginer and passionate Front-End Developer <br> based in Belarus. 📍
+                </p>
+                <div class="btns">
+                    <a href="#contact-anchor" class="btn">Contact me<i class="uil uil-message"></i></a>
+                    <a href="#about-anchor" class="white-btn"><i class="uil uil-mouse-alt scroll"></i>Scroll down<i class="uil uil-arrow-down"></i></a>
+                </div>
             </section>
-            <img src="./img/photo.jpg" class="selfie" alt="my photo">
-            
+            <img src="./img/second.png" class="selfie" alt="">
         </article>
 
-        <!-- about -->
         <div class="anchor" id="about-anchor"></div>
-        <article id="about" class="container">
-            <section class="block-name">
-                <h2 class="lng-about-name">About Me</h2>
-                <h4 class="lng-about-descript">My introdution</h4>
+
+        <article class="container  element-animation" id="about">
+            <section class="container-name">
+                <h2>About Me</h2>
+                <h4>My introdution</h4>
             </section>
-            <section class="home">
-                <img src="./img/photo.jpg" alt="" class="selfie">
-                <div class="information-container">
+            <section class="about">
+                <img src="./img/first.png" class="selfie" alt="">
+                <section class="container">
                     <div class="cards">
                         <div class="card">
                             <i class='bx bx-award'></i>
-                            <h4  class="black lng-exp">Experience</h4>
-                            <h5 class="lng-exp-year">2 years</h5>
+                            <h4>Experience</h4>
+                            <h5 class="">2 years</h5>
                         </div>
                         <div class="card">
                             <i class='bx bx-code-alt'></i>
-                            <h4  class="black lng-cmpl">Completed</h4>
-                            <h5 class="lng-cmpl-year">5 projects</h5>
+                            <h4>Completed</h4>
+                            <h5>5 projects</h5>
                         </div>
                         <div class="card">
                             <i class='bx bx-support'></i>
-                            <h4 class="black lng-supp">Support</h4>
-                            <h5 class="lng-supp-year">Online 24/7</h5>
+                            <h4>Support</h4>
+                            <h5>Online 24/7</h5>
                         </div>
                     </div>
-                    <p class="description lng-descr">As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.</p>
-                    <a href="" class="button lng-download" download>Download CV<i class="uil uil-file-alt"></i></a>
-                </div>
-            </section>            
+                    <p class="description">As a Junior Front-End Developer, I possess an impressive arsenal of skills in HTML, CSS, JavaScript. I excel in designing and maintaining responsive websites that offer a smooth user experience. My expertise lies in crafting dynamic, engaging interfaces through writing clean and optimized code and utilizing cutting-edge development tools and techniques. I am also a team player who thrives in collaborating with cross-functional teams to produce outstanding web applications.</p>
+                    <a href="" class="btn" download="">Download CV<i class="uil uil-message"></i></a>
+                </section>
+            </section>
         </article>
 
-        <!-- skills & services-->
-        <div class="anchor container" id="double-anchor"></div>
-        <article id="double" class="double">
-            <section id="skills" class="container">
-                <section class="block-name">
-                    <h2 class="lng-skills-name">Skills</h2>
-                    <h4 class="lng-skills-descript">My technical level</h4>
+        <div class="anchor" id="double-anchor"></div>
+
+        <article class="container element-animation" id="double">
+            <article id="skills" class="container">
+                <section class="container-name">
+                    <h2>Skills</h2>
+                    <h4>My technical level</h4>
                 </section>
-                    <section class="big-card">
-                        <div class="block-name">
-                            <h3 class="black lng-skill-name">Front-End Developer</h3>
-                            <hr class="line">
-                            <p class="description lng-skill-descript">I increase my skills every day</p>
-                        </div>
-                        <div class="skills-list">
+                <section>
+                    <div class="parent-card container">
+                        <section class="container-name">
+                            <h3>Front-End Developer</h3>
+                            <hr>
+                            <p class="description">I increase my skills every day</p>
+                        </section>
+                        <div class="skill-items">
                             <div class="skill-item">
-                                <!-- <i class="uil uil-html5"></i> -->
                                 <img src="https://skillicons.dev/icons?i=html" alt="html-icon">
-                                <div class="skill">
+                                <div class="skill-description">
                                     <h4 class="black">HTML</h4>
                                 <h5>Basic</h5>
-                                </div>
+                            </div>
                             </div>
                             <div class="skill-item">
-                                <!-- <i class='bx bxl-css3' ></i> -->
                                 <img src="https://skillicons.dev/icons?i=css" alt="css-icon">
-                                <div class="skill">
+                                <div class="skill-description">
                                     <h4 class="black">CSS</h4>
                                 <h5>Advanced</h5>
-                                </div>
+                            </div>
                             </div>
                             <div class="skill-item">
-                                <!-- <i class="uil uil-java-script"></i> -->
                                 <img src="https://skillicons.dev/icons?i=js" alt="js-icon">
-                                <div class="skill">
+                                <div class="skill-description">
                                     <h4 class="black">JavaScript</h4>
                                 <h5>Basic</h5>
-                                </div>
+                            </div>
                             </div>
                             <div class="skill-item">
-                                <!-- <i class="uil uil-github-alt"></i> -->
                                 <img src="https://skillicons.dev/icons?i=github" class="alt-image" id="git" alt="git-icon">
-                                <div class="skill">
+                                <div class="skill-description">
                                     <h4 class="black">Git</h4>
                                 <h5>Basic</h5>
-                                </div>
+                            </div>
                             </div>
                             <div class="skill-item">
-                                <!-- <i class='bx bxl-bootstrap' ></i> -->
                                 <img src="https://skillicons.dev/icons?i=bootstrap" alt="bootstrap-icon">
-                                <div class="skill">
+                                <div class="skill-description">
                                     <h4 class="black">Bootstrap</h4>
                                 <h5>Basic</h5>
-                                </div>
                             </div>
+                        </div>
                             <div class="skill-item">
-                                <!-- <i class='bx bxl-figma' ></i> -->
                                 <img src="https://skillicons.dev/icons?i=figma" class="alt-image" id="figma" alt="figma-icon">
-                                <div class="skill">
+                                <div class="skill-description">
                                     <h4 class="black">Figma</h4>
                                 <h5>Basic</h5>
-                                </div>
                             </div>
                         </div>
-                    </section>  
-                </section>
-            <section id="services" class="container">
-                <section class="block-name">
-                    <h2 class="lng-services-name">Services</h2>
-                    <h4 class="lng-services-descript">What i offer</h4>
-                </section>
-                    <section class="big-card">
-                        <div class="block-name">
-                            <h3 class="black lng-service-name">2 years of experience</h3>
-                            <hr class="line">
-                            <p class="description lng-service-descript">Providing quality work to clients</p>
                         </div>
-                        <ul>
-                            <li class="black lng-list-first">
-                                <img src="./img/check.svg" alt="">
-                                I develop the user interface.</h4></li>
-                            <li class="black lng-list-second">
-                                <img src="./img/check.svg" alt="">
-                                Web page development.</h4></li>
-                            <li class="black lng-list-third">
-                                <img src="./img/check.svg" alt="">
-                                I create ux element interactions.</h4></li>
-                            <li class="black lng-list-fourth">
-                                <img src="./img/check.svg" alt="">
-                                I position your brand.</h4></li>
-                        </ul>
-                    </section>
+                    </div>
+                </section>
             </article>
 
+            <article id="services" class="container">
+                <section class="container-name">
+                    <h2>Services</h2>
+                    <h4>What i offer</h4>
+                </section>
+                <section>
+                    <div class="parent-card container">
+                        <section class="container-name">
+                            <h3>2 years of experience</h3>
+                            <hr>
+                            <p class="description">Providing quality work to clients</p>
+                        </section>
+                        <ul>
+                            <li>
+                                <img src="./img/check.svg" alt="">
+                                I develop the user interface.
+                            </li>
+                            <li>
+                                <img src="./img/check.svg" alt="">
+                                Web page development.
+                            </li>
+                            <li>
+                                <img src="./img/check.svg" alt="">
+                                I create ux element interactions.
+                            </li>
+                            <li>
+                                <img src="./img/check.svg" alt="">
+                                I position your brand.
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </article>
         </article>
 
-        <!-- qualification -->
-        <div id="qualify-anchor" class="anchor"></div>
-        <article id="qualify" class="container">
-            <section class="block-name">
-                <h2 class="lng-qualification-name">Qualification</h2>
-                <h4 class="lng-qualification-descript">My personal jorney</h4>
+        <div class="anchor" id="qualification-anchor"></div>
+
+        <article class="container element-animation" id="qualification" >
+            <section class="container-name">
+                <h2>Qualification</h2>
+                <h4>My personal jorney</h4>
             </section>
-            <section class="qualify-tabs">
-                <button class="white-btn active lng-education-btn" id="educationBtn" onclick="hide()" type="button"><i class="uil uil-graduation-cap"></i>Education</button>
-                <button class="white-btn lng-work-btn" id="workBtn" onclick="show()" type="button"><i class="uil uil-bag-alt"></i>Work</button>
+            <section class="tabs">
+                <button class="white-btn active" id="EducationBtn" onclick="hide()"><i class="uil uil-graduation-cap"></i>Education</button>
+                <button class="white-btn" id="WorkBtn" onclick="show()"><i class="uil uil-briefcase-alt"></i>Experience</button>
             </section>
-            <section class="education show" id="education">
-                <div class="qualify-post div1">
-                    <h4 class="lng-first-education">Energy Engineer</h4>
-                    <p class="description">GSTU, Gomel, Belarus</p>
-                    <div class="time">
-                        <i class="uil uil-calendar-alt"></i>
-                        2013-2018
-                    </div>
+            <section class="container">
+            <section class="education qualification-container">
+                <div class="skill-description">
+                    <h4>Energy Engineer</h4>
+                    <h5>GSTU, Gomel, Belarus</h5>
+                    <h5><i class="uil uil-calendar-alt"></i> 2013-2018</h5>
                 </div>
-                <div class="div5">
-                    <div class="dot"></div>
-                    <div class="v-line"></div>
+                <div class="skill-description">
+                    <h4>Master of Energy</h4>
+                    <h5>GSTU, Gomel, Belarus</h5>
+                    <h5><i class="uil uil-calendar-alt"></i>2018-2019</h5>
                 </div>
-                <div class="qualify-post div2">
-                    <h4 class="lng-second-education">Software Engineer</h4>
-                    <p class="description">GSTU, Gomel, Belarus</p>
-                    <div class="time">
-                        <i class="uil uil-calendar-alt"></i>
-                        2016-2018
-                    </div>
+            </section>
+            <section class="qualification-container work hidden">
+                <div class="skill-description">
+                    <h4>Sales Specialist</h4>
+                    <h5>A1(velcom), Belarus</h5>
+                    <h5><i class="uil uil-calendar-alt"></i> 2016-2019</h5>
                 </div>
-                <div class="div6">
-                    <div class="dot"></div>
-                    <div class="v-line"></div>
+                <div class="skill-description">
+                    <h4>Software Engineer</h4>
+                    <h5>RUE "Gomelenergo"</h5>
+                    <h5><i class="uil uil-calendar-alt"></i>2020-2023</h5>
                 </div>
-                <div class="qualify-post div3">
-                    <h4 class="lng-third-education">Master of Energy Engineering</h4>
-                    <p class="description">GSTU, Gomel, Belarus</p>
-                    <div class="time">
-                        <i class="uil uil-calendar-alt"></i>
-                        2018-2019
-                    </div>
-                </div>
-                <div class="div7">
-                    <div class="dot"></div>
-                    <div class="v-line"></div>
-                </div>
-                <div class="qualify-post div4">
-                    <h4 class="lng-fourth-education">Front-End Web Developer</h4>
-                    <p class="description">It-Academy, Gomel, Belarus</p>
-                    <div class="time">
-                        <i class="uil uil-calendar-alt"></i>
-                        2022
-                    </div>
-                </div>
-                <div class="div8">
-                    <div class="line"></div>
-                    <div class="dot"></div>
-                </div>
-                <article id=""></article>
-                </section>
-                
-        <section class="work hide" id="work">
-            <div class="qualify-post div01">
-                <h4 class="lng-first-work">Active Sales Specialist</h4>
-                <p class="description">A1(velcom), Belarus</p>
-                <div class="time">
-                    <i class="uil uil-calendar-alt"></i>
-                    2016-2019
-                </div>
-            </div>
-            <div class="div05">
+            </section>
+            <section class="history-line">
                 <div class="dot"></div>
                 <div class="v-line"></div>
-            </div>
-            <div class="qualify-post div02">
-                <h4 class="lng-second-work">Electronic Engineer</h4>
-                <p class="description">GSTU, Gomel, Belarus</p>
-                <div class="time">
-                    <i class="uil uil-calendar-alt"></i>
-                    2019
-                </div>
-            </div>
-            <div class="div06">
                 <div class="dot"></div>
                 <div class="v-line"></div>
-            </div>
-            <div class="qualify-post div03">
-                <h4 class="lng-third-work">Software Engineer<br>(System Administrator)</h4>
-                <p class="description">RUE "Gomelenergo"</p>
-                <div class="time">
-                    <i class="uil uil-calendar-alt"></i>
-                    2020-2023
-                </div>
-            </div>
-            <div class="div07">
                 <div class="dot"></div>
                 <div class="v-line"></div>
-            </div>
-            <div class="qualify-post div04">
-                <h4 class="lng-fourth-work">Software Engineer</h4>
-                <p class="description">RUE "Gomelenergo"</p>
-                <div class="time">
-                    <i class="uil uil-calendar-alt"></i>
-                    2023 - 
-                </div>
-            </div>
-            <div class="div08">
-                <div class="line"></div>
                 <div class="dot"></div>
-            </div>
+            </section>
+            <section class="education qualification-container">
+                <div class="skill-description">
+                    <h4>Software Engineer</h4>
+                    <h5>GSTU, Gomel, Belarus</h5>
+                    <h5><i class="uil uil-calendar-alt"></i> 2016-2018</h5>
+                </div>
+                <div class="skill-description">
+                    <h4>Web Developer</h4>
+                    <h5>It-Academy, Belarus</h5>
+                    <h5><i class="uil uil-calendar-alt"></i>2022</h5>
+                </div>
+            </section>
+            <section class="qualification-container work hidden">
+                <div class="skill-description">
+                    <h4>Electronic Engineer</h4>
+                    <h5>RUE "Gomelenergo"</h5>
+                    <h5><i class="uil uil-calendar-alt"></i>2019</h5>
+                </div>
+                <div class="skill-description">
+                    <h4>Software Engineer</h4>
+                    <h5>RUE "Gomelenergo"</h5>
+                    <h5><i class="uil uil-calendar-alt"></i>2023-</h5>
+                </div>
+            </section>
         </section>
-    </article>
-        
-        <!-- portfolio -->
-        <div id="portfolio-anchor" class="anchor"></div>
-        <article id="portfolio" class="container">
-            <section class="block-name">
-                <h2 class="lng-portfolio-name">Portfolio</h2>
-                <h4 class="lng-portfolio-descript">My cases</h4>
+        </article>
+
+        <div class="anchor" id="portfolio-anchor"></div>
+
+        <article class="container element-animation" id="portfolio">
+            <section class="container-name">
+                <h2>Portfolio</h2>
+                <h4>My cases</h4>
             </section>
-            <section class="swiper portfolio-cases">
+            <section class="swiper">
                 <div class="swiper-wrapper">
-                <div  class="swiper-slide">
-                    <div class="case">
-                        <img src="./img/jasvami.png" alt="" class="case-preview">
-                        <h3 class="black case-name">Jasvami.com</h3>
-                        <p class="description case-description lng-jasvami-descript">
-                            Business card of a highly qualified <br> psychologist from Gomel.
-                            <br>
-                            Website adaptable to all devices, <br> with ui components and animated interactions.
-                        </p>
-                        <a href="https://dzmitrysopat.github.io/jasvami.com" class="button case-link" target="_blank">Live Demo<i class="uil uil-github-alt"></i></a>
-                    </div>
+                    <div class="swiper-slide">
+                <article class="case">
+                    <img src="./img/jasvami.png" alt="">
+                    <h3>Jasvami.com</h3>
+                    <p class="description"> Business card of a highly qualified psychologist <br> from Gomel.
+                        <br>
+                        Website adaptable to all devices,  with ui  components and animated interactions.</p>
+                    <a href="https://dzmitrysopat.github.io/jasvami.com" class="btn">Live Demo<i class="uil uil-github-alt"></i></a>
+                </article>
                 </div>
-
                 <div class="swiper-slide">
-                    <div class="case">
-                        <img src="./img/web.folio.png" alt="" class="case-preview">
-                        <h3 class="black case-name">web.folio</h3>
-                        <p class="description case-description lng-webfolio-descript">
-                            Final project for It-Academy journey.
-                            <br>
-                            Website adaptable to all devices, <br> with ui components and animated interactions.
-                        </p>
-                        <a href="https://dzmitrysopat.github.io/web.folio" class="button case-link" target="_blank">Live Demo<i class="uil uil-github-alt"></i></a>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="case">
-                        <img src="./img/travel.png" alt="" class="case-preview">
-                        <h3 class="black case-name">Travel</h3>
-                        <p class="description case-description lng-travel-decript">
-                            Final project for It-Academy journey.
-                            <br>
-                            Website adaptable to all devices, <br> with ui components and animated interactions.
-                        </p>
-                        <a href="https://dzmitrysopat.github.io/travel" class="button case-link" target="_blank">Live Demo<i class="uil uil-github-alt"></i></a>
-                    </div>
-                </div>
-                </div>
-                <div class="swiper-pagination"></div>
+                <article class="case">
+                    <img src="./img/web.folio.png" alt="">
+                    <h3>web.folio</h3>
+                    <p class="description">
+                        Final project for It-Academy journey.
+                        <br>
+                        Website adaptable to all devices, <br> with ui components and animated interactions.</p>
+                    <a href="https://dzmitrysopat.github.io/web.folio" class="btn">Live Demo<i class="uil uil-github-alt"></i></a>
+                </article>
+            </div>
+            <div class="swiper-slide">
+                <article class="case">
+                    <img src="./img/travel.png" alt="">
+                    <h3>Travel</h3>
+                    <p class="description">
+                        Final project for It-Academy journey.
+                        <br>
+                        Website adaptable to all devices, <br> with ui components and animated interactions.</p>
+                    <a href="https://dzmitrysopat.github.io/travel" class="btn">Live Demo<i class="uil uil-github-alt"></i></a>
+                </article>
+            </div>
+            </div>
+            <div class="swiper-pagination"></div>
             </section>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
         </article>
 
-        <!-- contacts -->
-        <div id="contact-anchor" class="anchor"></div>
-        <article id="contact" class="container">
-            <section class="block-name">
-                <h2 class="lng-contacts-name">Contact Me</h2>
-                <h4 class="lng-contacts-descript">Get in touch</h4>
+        <div class="anchor" id="contact-anchor"></div>
+
+        <article class="container element-animation" id="contact">
+            <section class="container-name">
+                <h2>Contact</h2>
+                <h4>Get in touch</h4>
             </section>
-            <section class="contacts-container">
-                <section class="big-card">
-                    <section class="msgs">
-                        <h3 class="black">Hit me up! 👇</h3>
-                        <div class="skill-item  contact-card">
+            <section class="container">
+                <div class="parent-card container">
+                    <h3>Hit me up! 👇</h3>
+                    <a href="https://t.me/dimka_myxa" target="_blank" class="card">
+                        <div class="skill-item">
                             <i class="uil uil-telegram-alt"></i>
-                            <div class="skill">
-                                <h4 class="black">Telegram</h4>
-                            <a href="https://t.me/dimka_myxa" class="contact-link">Find me</a>
+                            <div class="skill-description">
+                                <h4>Telegram</h4>
+                                <h5>Find me</h5>
                             </div>
                         </div>
-                        <div class="skill-item contact-card">
+                    </a>
+                    <a href="https://instagram.com/dimka_myxa" target="_blank" class="card">
+                        <div class="skill-item">
                             <i class="uil uil-instagram"></i>
-                            <div class="skill">
-                                <h4 class="black">Instagram</h4>
-                            <a href="https://instagram.com/dimka_myxa" class="contact-link">Follow me</a>
+                            <div class="skill-description">
+                                <h4>Instagram</h4>
+                                <h5>Follow me</h5>
                             </div>
                         </div>
-                        <div class="skill-item contact-card">
+                    </a>
+                    <a href="https://by.linkedin.com/in/dzmitry-sopat-796473251" target="_blank" class="card">
+                        <div class="skill-item">
                             <i class="uil uil-linkedin"></i>
-                            <div class="skill">
-                                <h4 class="black">Linkedin</h4>
-                            <a href="https://by.linkedin.com/in/dzmitry-sopat-796473251" class="contact-link">Hire me</a>
+                            <div class="skill-description">
+                                <h4>Linkedin</h4>
+                                <h5>Hire me</h5>
                             </div>
                         </div>
-                    </section>
-                </section>
-                <section class="contact-form big-card">
-                    <h3 class="black">Write me to collab</h3>
-                    <form action="https://formsubmit.co/your@email.com" method="POST" />
+                    </a>
+                </div>
+                <div class="parent-card container">
+                    <h3>Write me to collab</h3>
+                    <form action="https://formsubmit.co/dzmitrysopat@gmail.com" method="post">
                         <label for="name">Name</label>
                         <input type="text" name="name" id="name" placeholder="Insert your name">
-                        <label for="">Email</label>
+                        <label for="email">Email</label>
                         <input type="email" name="email" id="email" placeholder="Insert your email">
-                    <label for="project">Message</label>
+                        <label for="message">Message</label>
                         <textarea id="message" name="message" placeholder="Tell about your project / company"></textarea>
-                    <button type="submit" class="button">Send Message <i class="uil uil-message black"></i> </button>
+                        <button class="btn" type="submit">Send Message<i class="uil uil-message"></i></button>
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://dzmitrysopat.github.io/Portfolio/">
                     </form>
-                </section>
-        </section>
+                </div>
+            </section>
         </article>
+    </main>
 
     <div id="progress">
         <span id="progress-value"><i class="uil uil-arrow-up"></i></span>
     </div>
-    </main>
 
-    <footer>
-        <!-- <select class="change-lang languages">
-            <option value="ru" selected>ru</option>
-            <option value="en">en</option>
-        </select> -->
-        <!-- <article class="languages" id="languages">
-            <button value="en" id="en" class="lang description active" data-btn="en">en</button>|
-            <button value="ru" id="ru" class="lang description" data-btn="ru">ru</input>
-        </article> -->
+    <footer id="footer" class="footer">
         <h5 class="copyright">Copyright © 2023. All rights are reserved</h5>
     </footer>
 
+    
     <script src="./script.js"></script>
     <script src="./theme.js"></script>
 </body>
