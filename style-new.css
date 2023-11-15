@@ -305,7 +305,8 @@ section.links{
 
 img.selfie{
     /* width: 25%; */
-    max-height: 350px;
+    max-height: 450px;
+    /* max-height: 50vh; */
     border-radius: 50%;
 }
 
