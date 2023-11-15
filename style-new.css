@@ -2,7 +2,6 @@
 
 /* #75FE03 */ /* #dddddd */ /* #383838 */ /* #f7941d */
 
-
 *{
     font-family: "Poppins", sans-serif;
     text-decoration: none;
@@ -24,6 +23,30 @@ body{
     overflow-x: hidden;
     flex-direction: column;
     background-color: #fafafa;
+}
+
+.body_hide {
+	opacity: 0;
+	transition: 2s opacity ease-in-out;
+}
+.body_visible {
+	opacity: 1;
+}
+
+.element-animation {
+    opacity: 0;
+    transform: translateY(0%);
+}
+
+.element-animation {
+    opacity: 0;
+    transform: translateY(15%);
+}
+
+.element-animation.element-show {
+    opacity: 1;
+    transition: all 1.5s;
+    transform: translateY(0%);
 }
 
 .hidden{
