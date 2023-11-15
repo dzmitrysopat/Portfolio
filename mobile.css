@@ -111,6 +111,15 @@
         padding: 15px;
     }
 
+    .qualification-container{
+        grid-row-gap: 130px;
+    }
+
+    section.qualification-container:nth-child(4),
+    section.qualification-container:nth-child(5){
+    grid-row-gap: 0px;
+    }
+
     .swiper{
         width: 90vw;
     }

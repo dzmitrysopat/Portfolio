@@ -124,7 +124,7 @@ header{
     align-items: center;
     background-color: inherit;
     justify-content: space-between;
-    border-top: 2px solid #dfdfdf;
+    /* border-top: 2px solid #dfdfdf; */
 }
 
 .dark header{
