@@ -110,3 +110,9 @@ let calcScrollValue = () => {
     document.getElementById("menu").classList.remove("slide-top");
     document.getElementById("menu").classList.remove("burger-menu");
   });
+
+function burgerNav(){
+    // document.querySelector('mob-link').addEventListener('click', (event) => {
+    document.getElementById("menu").classList.remove("burger-menu");
+  // });
+}

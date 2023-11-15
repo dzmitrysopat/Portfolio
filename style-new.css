@@ -38,11 +38,6 @@ body{
 	background: #808080;
 }
 
-.slide-top {
-	-webkit-animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
 i{
     font-size: 28px;
     font-weight: 100;
@@ -174,9 +169,8 @@ nav a.active-link{
     font-size: 40px;
     position: absolute;
     bottom: 0;
-    right: 12%;
+    right: 5%;
 }
-
 
 #menu{
     position: absolute;
@@ -193,7 +187,7 @@ nav a.active-link{
     border-bottom: none;
     border-radius: 25px 25px 0 0;
     z-index: 10;
-    width: 98vw;
+    width: 100vw;
     align-self: center;
     padding-bottom: 70px;
 }
