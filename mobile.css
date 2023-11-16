@@ -212,6 +212,10 @@
         gap: 20px;
     }
 
+    footer{
+        display: none;
+    }
+
     .uil-apps{
         display: block !important;
         position: absolute;
@@ -342,12 +346,6 @@
         display: none;
     }
 
-    section.container > div.parent-card:first-child > a.card {
-        background-color: inherit;
-        /* width: auto; */
-        /* padding: 0; */
-        /* border: none; */
-    }
 
     div.swiper-button-next,
     div.swiper-button-prev{
@@ -365,5 +363,33 @@
 
     input, textarea{
         width: 70vw;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .about{
+        flex-wrap: wrap;
+        gap: 25px;
+        align-self: center;
+    }
+
+    .swiper{
+        width: 90vw;
+    }
+
+    .case{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 25px;
+    }
+
+    .case > img{
+        max-width: 85vw;
+    }
+
+    .case > .description{
+        max-width: 85vw;
     }
 }
