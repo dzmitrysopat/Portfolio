@@ -1,5 +1,4 @@
 let articles = document.querySelectorAll("article[id]");
-console.log(articles);
 window.addEventListener("scroll", navHighlighter);
 function navHighlighter() {
   let scrollY = window.scrollY;
@@ -68,7 +67,6 @@ function hide(){
     document.getElementById("WorkBtn").classList.remove("active");
     document.getElementById("EducationBtn").classList.add("active");
 }
-
 
 let calcScrollValue = () => {
     let scrollProgress = document.getElementById("progress");
