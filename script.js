@@ -95,9 +95,7 @@ let calcScrollValue = () => {
   window.onscroll = calcScrollValue;
   window.onload = calcScrollValue;
 
-  // function nav(){
-  //   document.getElementById("menu").classList.add("slide-top");
-  // }
+
 
   document.querySelector('.uil-apps').addEventListener('click', (event) => {
     document.getElementById("menu").classList.add("slide-top");
@@ -109,11 +107,6 @@ let calcScrollValue = () => {
     document.getElementById("menu").classList.remove("burger-menu");
   });
 
-function burgerNav(){
-    // document.querySelector('mob-link').addEventListener('click', (event) => {
-    document.getElementById("menu").classList.remove("burger-menu");
-  // });
-}
 
 setTimeout(function(){
 	document.body.classList.add('body_visible');
