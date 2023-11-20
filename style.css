@@ -230,7 +230,7 @@ nav a.active-link{
     background: #fff;
 }
 
-#menuToggle input:checked ~ ul{
+#menuToggle input:checked ~ div{
     transform: none;
 }
 
@@ -405,7 +405,6 @@ a.card{
     padding: 15px 20px;
     transition: all .4s;
 }
-
 
 a.card > h4{
     color: #383838;
