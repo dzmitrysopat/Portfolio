@@ -187,7 +187,8 @@ nav > a.active-link:after {
 	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 
-nav a.active-link{
+nav a.active-link,
+nav a.active-link >i{
     color: #f7941d;
 }
 

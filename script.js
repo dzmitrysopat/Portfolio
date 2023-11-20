@@ -11,8 +11,10 @@ function navHighlighter() {
       scrollY <= articleTop + articleHeight
     ){
       document.querySelector("header nav a[href*="+ articleId + "-anchor" + "]").classList.add("active-link");
+      document.querySelector("header nav div a[href*="+articleId +"]").classList.add("active-link");
     } else {
       document.querySelector("header nav a[href*="+ articleId + "-anchor" + "]").classList.remove("active-link");
+      document.querySelector("header nav div a[href*="+articleId +"]").classList.remove("active-link");
     }
   });
 }
