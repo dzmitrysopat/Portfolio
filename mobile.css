@@ -35,8 +35,8 @@
     .uil-apps{
         display: block !important;
         position: absolute;
-        right: 12%;
-        bottom: 15%;
+        right: 13% !important;
+        bottom: 15% !important;
         z-index: 5;
     }
 
@@ -50,7 +50,6 @@
 
     #home{
         display: grid;
-        /* grid-template-columns: repeat(2, 1fr); */
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
@@ -218,8 +217,8 @@
     .uil-apps{
         display: block !important;
         position: absolute;
-        right: 10%;
-        bottom: 20%;
+        right: 8%;
+        bottom: 25%;
         z-index: 5;
     }
 
