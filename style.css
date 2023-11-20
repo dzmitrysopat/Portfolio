@@ -393,8 +393,8 @@ div.cards{
     gap: 20px;
 }
 
-div.card,
 a.card{
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     width: 125px;
@@ -406,11 +406,8 @@ a.card{
     transition: all .4s;
 }
 
-a.card{
-    cursor: pointer;
-}
 
-div.card > h4{
+a.card > h4{
     color: #383838;
 }
 
@@ -626,8 +623,8 @@ a.card > .skill-item{
     padding: 0;
 }
 
-div.card:hover > i,
-div.card:hover > h4,
+a.card:hover > i,
+a.card:hover > h4,
 a.card:hover > div.skill-item > i,
 .skill-item:hover > i,
 a.card:hover > div.skill-item > div.skill-description > h4,
@@ -761,7 +758,7 @@ span > i.uil-arrow-up{
 }
 
 .dark i:hover,
-.dark div.card:hover > h4,
+.dark a.card:hover > h4,
 .dark div.swiper-button-next:hover,
 .dark div.swiper-button-prev:hover,
 .dark i.uil-arrow-up:hover{
@@ -789,6 +786,10 @@ span > i.uil-arrow-up{
 
 .dark a.card:hover{
     border: 2px solid #f7941d;
+}
+
+.dark a.card > h4{
+    color: #ddd;
 }
 
 .dark i.uil-arrow-up{
