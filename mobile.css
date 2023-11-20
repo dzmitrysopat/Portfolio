@@ -46,7 +46,7 @@
 
     #home{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        /* grid-template-columns: repeat(2, 1fr); */
         grid-template-rows: repeat(2, 1fr);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
@@ -81,7 +81,7 @@
         align-items: center;
     }
 
-    div.card{
+    a.card{
         width: auto;
         padding: 10px;
     }
@@ -171,11 +171,6 @@
         display: none;
     }
 
-    .swiper-pagination{
-        /* align-self: center; */
-    }
-
-
     div#progress{
         display: none !important;
     }
@@ -219,8 +214,8 @@
     .uil-apps{
         display: block !important;
         position: absolute;
-        right: 12%;
-        bottom: 15%;
+        right: 10%;
+        bottom: 20%;
         z-index: 5;
     }
 
@@ -234,15 +229,15 @@
 
     #home{
         display: grid;
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
         grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
+        grid-column-gap: 20px;
         grid-row-gap: 0px;
         align-items: center;
         justify-content: center;
     }
 
-    #home > #links { grid-area: 3 / 1 / 4 / 2; flex-direction: row; margin-top: 0;}
+    #home > #links { grid-area: 3 / 1 / 4 / 2; flex-direction: row; margin-top: 25px;}
     #home > #information { grid-area: 2 / 1 / 3 / 2; }
     #home > img { grid-area: 1 / 1 / 2 / 2;
     max-width: 75vw; align-self: center;
@@ -272,7 +267,7 @@
         align-items: center;
     }
 
-    div.card{
+    a.card{
         width: auto;
         padding: 10px;
     }
@@ -354,11 +349,6 @@
     div.swiper-button-prev{
         display: none;
     }
-
-    .swiper-pagination{
-        /* align-self: center; */
-    }
-
 
     div#progress{
         display: none !important;
