@@ -73,7 +73,8 @@ i{
     cursor: pointer;
 }
 
-i:hover{
+i:hover,
+span{
     color: #f7941d;
 }
 
@@ -90,7 +91,8 @@ h2{
     font-size: 2.5rem;
 }
 
-h3{
+h3,
+span{
     font-size: 1.5rem;
     font-weight: 500;
     /* color: #f7941d; */
@@ -124,10 +126,7 @@ header{
     align-items: center;
     background-color: inherit;
     justify-content: space-between;
-    /* border-top: 2px solid #dfdfdf; */
 }
-
-
 
 footer{
     padding: 20px 0;
@@ -319,12 +318,16 @@ section.information{
     gap: 10px;
 }
 
-section.information > h3{
+div.type > h3{
     color: #f7941d;
 }
 
 .description{
     color: #8d8e8d;
+}
+
+.type{
+    display: flex;
 }
 
 div.btns{

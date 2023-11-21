@@ -127,3 +127,11 @@ function onEntry(entry) {
   for (let elm of elements) {
 	observer.observe(elm);
   }
+
+  // typing
+  var typed = new Typed(".typing",{
+    strings:["Front-End Developer"],
+    typeSpeed: 150,
+    BackSpeed: 60,
+    // loop:true
+  })
