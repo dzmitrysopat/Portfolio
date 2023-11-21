@@ -130,8 +130,8 @@ function onEntry(entry) {
 
   // typing
   var typed = new Typed(".typing",{
-    strings:["Front-End Developer"],
-    typeSpeed: 150,
-    BackSpeed: 60,
+    strings:["Front-End Web Developer"],
+    typeSpeed: 125,
+    BackSpeed: 150,
     // loop:true
   })

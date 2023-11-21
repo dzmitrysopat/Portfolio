@@ -92,7 +92,8 @@ h2{
 }
 
 h3,
-span{
+.typed-cursor,
+.typed-cursor--blink {
     font-size: 1.5rem;
     font-weight: 500;
     /* color: #f7941d; */
@@ -800,6 +801,11 @@ span > i.uil-arrow-up{
 .dark ::selection {
     background: #8d8e8d; 
     color: #fff;
+}
+
+.dark div.type > h3,
+.dark div.type > span{
+    color: #75fe03;
 }
 
 /* dark scheme */
