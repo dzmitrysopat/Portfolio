@@ -135,3 +135,11 @@ function onEntry(entry) {
     // BackSpeed: 0.5,
     // loop:true
   })
+
+  // succsess typing
+  var typed = new Typed(".success",{
+    strings:["Message sent! 💌 Thank you 🙏"],
+    typeSpeed: 150,
+    // BackSpeed: 0.5,
+    // loop:true
+  })
