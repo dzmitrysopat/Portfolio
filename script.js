@@ -96,8 +96,7 @@ let calcScrollValue = () => {
   };
   window.onscroll = calcScrollValue;
   window.onload = calcScrollValue;
-
-
+  
 
   document.querySelector('.uil-apps').addEventListener('click', (event) => {
     document.getElementById("menu").classList.add("slide-top");
